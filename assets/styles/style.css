@@ -1,0 +1,187 @@
+@charset "UTF-8";
+body{
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+/* header with menu desktop */
+.navbar__logo{
+max-height: 80px;
+}
+
+.nav__btn{
+  font-size: 1.05rem;
+  border-radius:0.3rem;
+}
+
+.nav__btn:hover{
+  box-shadow: white 0px 0.06rem 0.5rem;
+}
+
+.nav__btn--signUp, .nav__btn--logIn, .nav__btn--logOut{
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  color: #484545;
+  padding: 0.13rem 1.4rem;
+}
+
+.nav__btn--signUp, .nav__btn--logIn{
+  font-size: 1.2rem;
+}
+
+.nav__btn--signUp::after, .nav__btn--logIn::after{
+content: " \2935";
+color: #000000;
+}
+
+.nav__btn--signUp:hover, .nav__btn--logIn:hover{
+ box-shadow: none;
+ background-color: #fff;
+ color: #484545;
+}
+
+
+/* menu-mobile */
+
+.menu__social--mobile{
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#navbarSupportedContent{
+  height: 100vh;
+}
+/* **---------clientProfile-----------** */
+.btn__lang__hide{
+  display: none;
+}
+/* personal information */
+.hero, label{
+  color:#55595C;
+}
+
+h1{
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #C36969; 
+  text-align: center;
+
+}
+
+.item-border{
+  color: #E5DBD9;
+  box-shadow: 0rem 0.1rem 0.37rem #E5DBD9;
+  border-radius: 1.125rem;
+  
+}
+
+.btn-choseFile{
+  color: #C36969;
+  box-shadow: 0rem 0.1rem 0.37rem #000000;
+  font-size: 0.9rem;
+}
+.personal-item{
+  flex-basis: calc((100%/3) - 2rem);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  body{
+    border: 1px solid red;
+  }
+  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  body{
+    border: 1px green solid;
+  }
+
+  
+  
+/* **---------clientProfile-----------** */
+.hero{
+  flex-wrap: wrap;
+}
+.personal-item{
+  flex-basis: 100%;
+}
+.header__photo{
+  margin-bottom: 40px;
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  body{
+    border:1px solid yellow;
+  }
+
+  /* header */
+  .nav__btn--signUp::after, .nav__btn--logIn::after{
+    content: "";
+  }
+
+  .nav__btn--signUp:hover, .nav__btn--logIn:hover{
+    box-shadow:  white 0px 1px 8px;
+    background-color: #212529;
+    color: #ffff;
+  }
+
+  .nav__btn--logIn{
+    background-image: url('../imgs/icons/user-outlined.svg')!important;
+    background-repeat: no-repeat !important;
+    background: #212529;
+    color:#ffff;
+  }
+  .nav__btn--signUp, .nav__btn--logIn{
+    font-size: 1.06rem;
+  }
+  
+  .header__photo{
+    width: 35%;
+    align-self: center;
+  }
+  
+/* menu */
+  #navbarSupportedContent{
+    height: auto;
+  }
+  
+  .nav__btn{
+    margin: 0 0.3rem;
+  }
+
+  .nav-item{
+    margin-bottom: 0;
+  }
+
+  .social-link{
+    display: none;
+  }
+  
+  /* **---------clientProfile-----------** */
+  .btn__lang__hide{
+    display: block;
+  }
+  .menu__user-info{
+    display: block!important;
+  }
+  .mobile__only{
+    display: none!important;
+  }
+
+  .header__photo{
+    margin-bottom: 0;
+  }
+  .header-name{
+    font-size: 1.05rem ;
+  }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { ... }
