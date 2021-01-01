@@ -23,18 +23,28 @@
       <div class=" container d-flex ">
         <a class="navbar-brand" href="index.html"><img class="navbar__logo" src="assets/imgs/logo.png"
             alt="the companies logo"></a>
+        <!-- messages, open modal window -->
+
+        <div class="nav-link  btn__openModal">
+          <button class="bg-transparent border-0 position-relative" role="check messages">
+            <img class="" src="assets/imgs/icons/email.svg" alt="email icon">
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span
+                class="visually-hidden">unread messages</span></span>
+          </button>
+        </div>
+        <!-- /.messages -->
         <!-- burger menu-btn-->
         <button class="navbar-toggler burger-btn" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="justify-content-end collapse navbar-collapse " id="navbarSupportedContent">
+        <div class="justify-content-end collapse navbar-collapse position-relative " id="navbarSupportedContent">
           <ul class="navbar-nav ul__items">
-
             <!-- change language -->
-            <li class="nav-item mb-4 btn__lang__hide nav__btn">
-              <div class="d-flex nav-link">
+            <li class="nav-item mb-4 mt-2 btn__lang__hide nav__btn">
+              <div class="  px-2 d-flex nav-link">
                 <img class="pe-1" src="assets/imgs/icons/lang-icon.svg" alt="change language">
                 <select class="form-select fs-6  form-select-sm  btn-dark bg-dark d-inline "
                   aria-label="form-select-sm example" role="switch to English language">
@@ -45,26 +55,32 @@
             </li>
             <!-- /.change language -->
 
-            <!-- log in -->
+            <!-- user-info -->
             <li class="nav-item">
-              <a href="#" class="btn nav__btn--logIn nav__btn">Log in</a>
+              <div class="me-3 d-flex align-items-center flex-column-reverse menu__user-info">
+                <img src="assets/imgs/user-photo.png" class="rounded-circle header__photo" alt="user photo">
+                <h1 class="text-white d-inline header-name">Mark</h1>
+              </div>
             </li>
-            <li class="nav-item  nav__btn">
-              <a href="#" class="btn btn-dark nav__btn mobile__only"> As a car owner </a>
+            <!-- home -->
+            <li class="nav-item mobile__only">
+              <a href="#" class="btn btn-dark  nav__btn">Home</a>
             </li>
-            <li class="nav-item mb-5 nav__btn">
-              <a href="#" class="btn btn-dark nav__btn mobile__only"> As a car user </a>
+            <!-- profile page -->
+            <li class="nav-item mobile__only">
+              <a href="#" class="btn btn-dark  nav__btn">Profile page</a>
             </li>
-
-            <!-- sign up -->
-            <li class="nav-item mt-2 mb-1">
-              <a href="#" class="btn btn-dark  nav__btn nav__btn--signUp">Sign up</a>
+            <!-- show the map -->
+            <li class="nav-item mobile__only">
+              <a href="#" class="btn btn-dark  nav__btn">Show the map</a>
             </li>
-            <li class="nav-item  nav__btn ">
-              <a href="#" class="btn  btn-dark nav__btn mobile__only"> As a car owner </a>
+            <!-- rent a car -->
+            <li class="nav-item mobile__only">
+              <a href="#" class="btn btn-dark  nav__btn">Rent a car</a>
             </li>
-            <li class="nav-item nav__btn">
-              <a href="#" class="btn btn-dark nav__btn mobile__only"> As a car user </a>
+            <!-- log out -->
+            <li class="nav-item">
+              <a href="#" class="btn  btn-dark nav__btn nav__btn--logOut">Log out</a>
             </li>
           </ul>
 
@@ -93,6 +109,27 @@
           </div>
           <!-- /.social-link -->
 
+          <!-- change location -->
+          <div class="position-absolute bottom-0 start-0 px-2 d-flex nav-link mobile__only nav__btn">
+            <img class="pe-1" src="assets/imgs/icons/location.svg" alt="change location">
+            <select class="form-select form-select-sm  btn-dark bg-dark d-inline " aria-label="form-select-sm example"
+              role="switch to English language">
+              <option value="1">Eslöv</option>
+              <option value="2">Helsingborg</option>
+              <option value="3">Hässleholm</option>
+              <option value="4">Höganäs</option>
+              <option value="5">Kristianstad</option>
+              <option value="6">Landskrona</option>
+              <option value="7">Lund</option>
+              <option value="8">Simrishamn</option>
+              <option value="9">Skanör Falsterbo</option>
+              <option value="10">Trelleborg</option>
+              <option value="11">Ystad</option>
+              <option value="12">Ängelholm</option>
+            </select>
+          </div>
+          <!-- /.change location -->
+
           <!-- change language -->
 
           <div class="position-absolute bottom-0 end-0 px-2  d-flex nav-link mobile__only nav__btn">
@@ -111,11 +148,16 @@
       </div>
     </nav>
     <!-- /.desktop menu -->
-
-
-
   </header>
 
+  <main>
+    <!-- personal information -->
+    <section class="container">
+      <h2 class="section__title my-4">Personal information</h2>
+      
+    </section>
+   
+  </main>
 
 
 
