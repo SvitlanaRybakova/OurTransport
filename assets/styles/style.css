@@ -1,187 +1,296 @@
 @charset "UTF-8";
-body{
+body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: #55595C;
 }
 
 /* header with menu desktop */
-.navbar__logo{
-max-height: 80px;
+.navbar__logo {
+  max-height: 80px;
 }
 
-.nav__btn{
+.nav__btn {
   font-size: 1.05rem;
-  border-radius:0.3rem;
+  border-radius: 0.3rem;
 }
 
-.nav__btn:hover{
+.nav__btn:hover {
   box-shadow: white 0px 0.06rem 0.5rem;
 }
 
-.nav__btn--signUp, .nav__btn--logIn, .nav__btn--logOut{
+.nav__btn--signUp, .nav__btn--logIn, .nav__btn--logOut {
   background-color: #ffffff;
   border-radius: 1.25rem;
   color: #484545;
   padding: 0.13rem 1.4rem;
 }
 
-.nav__btn--signUp, .nav__btn--logIn{
+.nav__btn--signUp, .nav__btn--logIn {
   font-size: 1.2rem;
 }
 
-.nav__btn--signUp::after, .nav__btn--logIn::after{
-content: " \2935";
-color: #000000;
+.nav__btn--signUp::after, .nav__btn--logIn::after {
+  content: " \2935";
+  color: #000000;
 }
 
-.nav__btn--signUp:hover, .nav__btn--logIn:hover{
- box-shadow: none;
- background-color: #fff;
- color: #484545;
+.nav__btn--signUp:hover, .nav__btn--logIn:hover {
+  box-shadow: none;
+  background-color: #fff;
+  color: #484545;
 }
-
 
 /* menu-mobile */
+.header__photo{
+  width: 60%;
+}
 
-.menu__social--mobile{
+.menu__social--mobile {
   position: absolute;
   bottom: 30%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-#navbarSupportedContent{
+#navbarSupportedContent {
   height: 100vh;
 }
+
+
+
 /* **---------clientProfile-----------** */
-.btn__lang__hide{
+/* menu */
+.btn__lang__hide {
   display: none;
 }
+
 /* personal information */
-.hero, label{
-  color:#55595C;
-}
-
-h1{
-  font-size: 2.1rem;
+.section__title {
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #C36969; 
+  color: #C36969;
   text-align: center;
-
 }
 
-.item-border{
-  color: #E5DBD9;
+.item__border{
   box-shadow: 0rem 0.1rem 0.37rem #E5DBD9;
   border-radius: 1.125rem;
-  
 }
 
-.btn-choseFile{
+.btn-choseFile {
   color: #C36969;
   box-shadow: 0rem 0.1rem 0.37rem #000000;
   font-size: 0.9rem;
 }
-.personal-item{
-  flex-basis: calc((100%/3) - 2rem);
+
+.btn-choseFile:hover {
+  color: #ffffff;
+  background-color: #b42f2f;
 }
 
+.hero>.personal-item>img {
+  width: 130px;
+}
+
+.btn__custom {
+  background-color: #C36969;
+  box-shadow: 0rem 0.1rem 0.37rem #000000;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn__custom:hover {
+  background-color: #b42f2f;
+  color: #fff;
+}
+
+/* rent a car */
+
+.rent__button-group{
+  height: 8.75rem;
+  justify-content: space-between;
+}
+
+.item__time-card{ 
+  height: 21.9rem;
+}
+.date__select-form{
+  display: flex;
+  justify-content: space-between;
+}
+.date__select-form__item {
+  flex-basis: calc((100%/3) - 0.5rem);
+} 
+
+.card__hide__desc, .card__hide__tab{
+  display: none;
+}
+
+.carousel{
+  background-color: rgb(209, 193, 189, 41%);
+  text-align: center;
+}
+.carousel-item{
+  padding: 60px;
+}
+
+.row{
+  align-items: center;
+  justify-content: center;
+}
+
+.card-text{
+  text-align: start;
+}
+
+.card{
+  min-height: 400px;
+  overflow-y: hidden;
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%42556A' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%%42556A' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-indicators > li {
+  background-color: #42556A;
+}
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-  body{
+
+@media (min-width: 576px) {
+  body {
     border: 1px solid red;
   }
-  
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-  body{
+
+@media (min-width: 768px) {
+  body {
     border: 1px green solid;
   }
-
-  
-  
-/* **---------clientProfile-----------** */
-.hero{
-  flex-wrap: wrap;
-}
-.personal-item{
-  flex-basis: 100%;
-}
-.header__photo{
-  margin-bottom: 40px;
-}
+  /* **---------clientProfile-----------** */
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  body{
-    border:1px solid yellow;
-  }
 
+@media (min-width: 992px) {
+  body {
+    border: 1px solid yellow;
+  }
+  .section__title {
+    font-size: 2.1rem;
+  }
   /* header */
-  .nav__btn--signUp::after, .nav__btn--logIn::after{
+  .nav__btn--signUp::after, .nav__btn--logIn::after {
     content: "";
   }
-
-  .nav__btn--signUp:hover, .nav__btn--logIn:hover{
-    box-shadow:  white 0px 1px 8px;
+  .nav__btn--signUp:hover, .nav__btn--logIn:hover {
+    box-shadow: white 0px 1px 8px;
     background-color: #212529;
     color: #ffff;
   }
-
-  .nav__btn--logIn{
+  .nav__btn--logIn {
     background-image: url('../imgs/icons/user-outlined.svg')!important;
     background-repeat: no-repeat !important;
     background: #212529;
-    color:#ffff;
+    color: #ffff;
   }
-  .nav__btn--signUp, .nav__btn--logIn{
+  .nav__btn--signUp, .nav__btn--logIn {
     font-size: 1.06rem;
   }
-  
-  .header__photo{
-    width: 35%;
+  .header__photo {
+    width: 28%;
     align-self: center;
   }
-  
-/* menu */
-  #navbarSupportedContent{
+  /* menu */
+  #navbarSupportedContent {
     height: auto;
   }
-  
-  .nav__btn{
+  .nav__btn {
     margin: 0 0.3rem;
   }
-
-  .nav-item{
+  .nav-item {
     margin-bottom: 0;
   }
-
-  .social-link{
+  .social-link {
     display: none;
   }
-  
   /* **---------clientProfile-----------** */
-  .btn__lang__hide{
+  /* menu */
+  .btn__lang__hide {
     display: block;
   }
-  .menu__user-info{
+  .menu__user-info {
     display: block!important;
   }
-  .mobile__only{
+  .mobile__only {
     display: none!important;
   }
-
-  .header__photo{
+  .header__photo {
     margin-bottom: 0;
   }
-  .header-name{
-    font-size: 1.05rem ;
+  .header-name {
+    font-size: 1.05rem;
+  }
+  /* personal information */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero__personal-item__photo{
+    flex-basis: 30%;
+  }
+  .hero__personal-item__inputs{
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .btn__custom{
+    display: inline-block !important;
+    margin-bottom: 0rem !important;
+    margin: 0 auto;
+  }
+/* rent a car */
+  .rent__button-group{
+    flex-direction: row !important;
   }
 
+.location__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.item__time-card{
+  flex-basis: calc((100%/2) - 2rem);
+}
+
+.card__hide__tab{
+  display: block;
+}
+  /* .personal-item {
+    flex-basis: calc((100%/3) - 2rem);
+    border:1px solid red;
+  } */
+
+}
+
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+
+@media (min-width: 1200px) {
+  body{
+    border: 2px solid blue;
+  }
+  .card__hide__desc{
+    display: block;
+  }
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { ... }
+
+@media (min-width: 1400px) {
+  ...
+}
