@@ -43,7 +43,7 @@
         <div class="justify-content-end collapse navbar-collapse position-relative " id="navbarSupportedContent">
           <ul class="navbar-nav  ul__items">
             <!-- change language -->
-            <li class="nav-item mb-4 mt-2 btn__lang__hide nav__btn">
+            <li class="nav-item mt-2 btn__lang__hide nav__btn">
               <div class="  px-2 d-flex nav-link">
                 <img class="pe-1" src="assets/imgs/icons/lang-icon.svg" alt="change language">
                 <select class="form-select fs-6  form-select-sm  btn-dark bg-dark d-inline "
@@ -169,10 +169,11 @@
             </div>
             <div class="row align-items-start">
               <div class="col-6">
-                <button type="button" class="btn  btn-choseFile btn-outline-secondary">Chose File</button>
+                <form action="">
+                  <input type="file" id="myFile" name="filename">
+                </form>
               </div>
               <div class="col-6">
-                <h3 class="fst-italic fs-6">No File Chosen</h3>
               </div>
             </div>
 
@@ -208,8 +209,8 @@
 
         <!-- buttons -->
         <div class="personal-item text-center mt-5">
-          <button type="button" class="btn d-block m-auto mb-3 btn__custom">Confirm</button>
-          <button type="button" class="btn d-block m-auto btn__custom">Show the map</button>
+          <a href="#" class="btn d-block m-auto mb-3 btn__custom">Confirm</a>
+          <a href="mapClientPage.html" class="btn d-block m-auto btn__custom">Show the map</a>
         </div>
         <!-- /.buttons -->
       </div>
