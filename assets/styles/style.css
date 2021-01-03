@@ -29,10 +29,6 @@ body {
   font-size: 1.2rem;
 }
 
-.nav__btn--signUp::after, .nav__btn--logIn::after {
-  content: " \2935";
-  color: #000000;
-}
 
 .nav__btn--signUp:hover, .nav__btn--logIn:hover {
   box-shadow: none;
@@ -159,6 +155,32 @@ body {
 .carousel-indicators > li {
   background-color: #42556A;
 }
+/* modal window */
+.modal__img-wrapper{
+  flex-basis: 20%;
+}
+
+.modal__img{
+  width: 100%;
+  border-radius: 20px
+}
+
+.modal__text-wrapper{
+  flex-basis: 60%;
+}
+
+#messageToOwner{
+  border: 1px solid #DDDDDD;
+  width: 100%;
+}
+
+/* !!!!! */
+.secondWindow{
+  position: absolute;
+  top:0px;
+  left: -10px;
+}
+
 
 /******* mapClientPage *******/
 .btn__back {

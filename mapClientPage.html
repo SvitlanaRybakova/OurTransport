@@ -7,11 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/styles/style.css">
+  <link href="assets/styles/bootstrap.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Our Transport</title>
 </head>
@@ -25,8 +24,8 @@
             alt="the companies logo"></a>
         <!-- messages, open modal window -->
 
-        <div class="nav-link  btn__openModal">
-          <button class="bg-transparent border-0 position-relative" role="check messages">
+        <div class="nav-link">
+          <button class="bg-transparent border-0 position-relative" data-bs-toggle="modal" data-bs-target="#arrivesTime" role="check messages">
             <img class="" src="assets/imgs/icons/email.svg" alt="email icon">
             <span
               class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span
@@ -63,24 +62,25 @@
               </div>
             </li>
             <!-- home -->
+            <!-- TODO implement home link -->
             <li class="nav-item mobile__only">
-              <a href="#" class="btn btn-dark  nav__btn">Home</a>
+              <a href="index.html" class="btn btn-dark  nav__btn">Home</a>
             </li>
             <!-- profile page -->
             <li class="nav-item mobile__only">
-              <a href="#" class="btn btn-dark  nav__btn">Profile page</a>
+              <a href="clientProfile.html" class="btn btn-dark  nav__btn">Profile page</a>
             </li>
             <!-- show the map -->
             <li class="nav-item mobile__only">
-              <a href="#" class="btn btn-dark  nav__btn">Show the map</a>
+              <a href="mapClientPage.html" class="btn btn-dark  nav__btn">Show the map</a>
             </li>
             <!-- rent a car -->
             <li class="nav-item mobile__only">
-              <a href="#" class="btn btn-dark  nav__btn">Rent a car</a>
+              <a href="clientProfile.html#rentCar" class="btn btn-dark  nav__btn">Rent a car</a>
             </li>
             <!-- log out -->
             <li class="nav-item">
-              <a href="#" class="btn  btn-dark nav__btn nav__btn--logOut">Log out</a>
+              <a href="index.html" class="btn  btn-dark nav__btn nav__btn--logOut">Log out</a>
             </li>
           </ul>
 
@@ -164,14 +164,42 @@
       </div>
     </section>
 
+<!-- Modal arrives time-->
+<div class="modal fade" id="arrivesTime" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content secondWindow">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalLabel">Your car will arrive in 5 minutes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex align-items-center justify-content-around">
+        <div class="modal__img-wrapper">
+        <img class="modal__img" src="assets/imgs/car-items/Mercedes_EQS.jpg" alt="mercedes">
+        </div>
+        <div class="modal__text-wrapper ">
+          <p class="fw-bold mb-5">Mercedes Future Monstercar1<br>
+          <span class="fw-normal">registration number:</span> 23456FDC
+          </p>
+          <p class="modal__text">Have a good trip!</p>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn__back fw-normal" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.Modal arrives time -->
+
+
   </main>
 
 
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
+  <script src="assets/scripts/bootstrap.bundle.js"></script>
 
 
 </body>

@@ -7,11 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/styles/style.css">
+  <link href="assets/styles/bootstrap.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Our Transport</title>
 </head>
@@ -25,8 +24,8 @@
             alt="the companies logo"></a>
         <!-- messages, open modal window -->
 
-        <div class="nav-link  btn__openModal">
-          <button class="bg-transparent border-0 position-relative" role="check messages">
+        <div class="nav-link">
+          <button class="bg-transparent border-0 position-relative" data-bs-toggle="modal" data-bs-target="#noMessage" role="check messages">
             <img class="" src="assets/imgs/icons/email.svg" alt="email icon">           
           </button>
         </div>
@@ -60,24 +59,25 @@
               </div>
             </li>
             <!-- home -->
+            <!-- TODO implement home link -->
             <li class="nav-item mobile__only">
               <a href="#" class="btn btn-dark  nav__btn">Home</a>
             </li>
             <!-- profile page -->
             <li class="nav-item mobile__only">
-              <a href="#" class="btn btn-dark  nav__btn">Profile page</a>
+              <a href="clientProfile.html" class="btn btn-dark  nav__btn">Profile page</a>
             </li>
             <!-- show the map -->
             <li class="nav-item mobile__only">
-              <a href="#" class="btn btn-dark  nav__btn">Show the map</a>
+              <a href="mapClientPage.html" class="btn btn-dark  nav__btn">Show the map</a>
             </li>
             <!-- rent a car -->
             <li class="nav-item mobile__only">
-              <a href="#" class="btn btn-dark  nav__btn">Rent a car</a>
+              <a href="#rentCar" class="btn btn-dark  nav__btn">Rent a car</a>
             </li>
             <!-- log out -->
             <li class="nav-item">
-              <a href="#" class="btn  btn-dark nav__btn nav__btn--logOut">Log out</a>
+              <a href="index.html" class="btn  btn-dark nav__btn nav__btn--logOut">Log out</a>
             </li>
           </ul>
 
@@ -216,7 +216,7 @@
     <!-- /.personal information -->
     <!-- pent a car -->
     <section class="container">
-      <h2 class="section__title py-4 my-4">Rent a car</h2>
+      <h2 id="rentCar" class="section__title py-4 my-4">Rent a car</h2>
       
         <!-- radio-btn-group -->
         <div class=" p-4">
@@ -579,16 +579,102 @@
     <!-- /.Choose from the cars -->
 
     <div class="container my-4 text-end">
-      <button type="button" class="btn d-block m-auto mb-3 px-4  btn__custom">Calculate the cost</button>
+      <button type="button" class="btn d-block m-auto mb-3 px-4  btn__custom" data-bs-toggle="modal" data-bs-target="#calculateTheCost">Calculate the cost</button>
     </div>
   </main>
 
 
 
+
+<!-- Modal costs calculate-->
+<div class="modal fade" id="calculateTheCost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Your price is 500 SEK</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex align-items-center justify-content-around">
+        <div class="modal__img-wrapper">
+        <img class="modal__img" src="assets/imgs/car-items/Mercedes_EQS.jpg" alt="mercedes">
+        </div>
+        <div class="modal__text-wrapper">
+        <textarea id="messageToOwner" name="messageToOwner" rows="4" cols="50" placeholder="type a message to the car owner..."></textarea>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn__back fw-normal" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn__custom m-0" data-bs-toggle="modal" data-bs-target="#orderConfirm">Confirm</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.Modal costs calculate -->
+
+<!-- Modal confirm the order-->
+<div class="modal fade" id="orderConfirm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content secondWindow">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Your price is 500 SEK</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex align-items-center justify-content-around">
+        <div class="modal__img-wrapper">
+        <img class="modal__img" src="assets/imgs/car-items/Mercedes_EQS.jpg" alt="mercedes">
+        </div>
+        <div class="modal__text-wrapper ">
+          <p class="fw-bold mb-3">Mercedes Future Monstercar1<br>
+          <span class="fw-normal">registration number:</span> 23456FDC
+          </p>
+          <p class="modal__text">This  is an electric four-door fastback sedan
+            The Future Monstercar1 version delivers an 
+            EPA-rated all-electric range of 263 miles
+            (423 km) and the Long Range versions deliver
+            353 miles (568 km).</p>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn__back fw-normal" data-bs-dismiss="modal">Close</button>
+        <a  href="mapClientPage.html" class="btn btn__custom m-0">Where is the car?</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.Modal confirm the order -->
+
+<!-- Modal no message-->
+<div class="modal fade" id="noMessage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content secondWindow">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalLabel">You don't nave messages</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex align-self-center justify-content-center fs-1">
+        <p>¯\_(ツ)_/¯</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn__back fw-normal" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.Modal no message -->
+
+<!-- !!!!Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#noMessage">
+  Launch demo modal
+</button> -->
+<!-- !!!!! --> 
+
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
+  <script src="assets/scripts/bootstrap.bundle.js"></script>
+  <script src="assets/scripts/main.js"></script>
 
 
 </body>
