@@ -25,8 +25,9 @@
         <!-- messages, open modal window -->
 
         <div class="nav-link">
-          <button class="bg-transparent border-0 position-relative" data-bs-toggle="modal" data-bs-target="#noMessage" role="check messages">
-            <img class="" src="assets/imgs/icons/email.svg" alt="email icon">           
+          <button class="bg-transparent border-0 position-relative" data-bs-toggle="modal" data-bs-target="#noMessage"
+            role="check messages">
+            <img class="" src="assets/imgs/icons/email.svg" alt="email icon">
           </button>
         </div>
         <!-- /.messages -->
@@ -110,7 +111,7 @@
           <div class="position-absolute bottom-0 start-0 px-2 d-flex nav-link mobile__only nav__btn">
             <img class="pe-1" src="assets/imgs/icons/location.svg" alt="change location">
             <select class="form-select form-select-sm  btn-dark bg-dark d-inline " aria-label="form-select-sm example"
-              role="switch to English language">
+              role="choose the city">
               <option value="1">Eslöv</option>
               <option value="2">Helsingborg</option>
               <option value="3">Hässleholm</option>
@@ -123,6 +124,7 @@
               <option value="10">Trelleborg</option>
               <option value="11">Ystad</option>
               <option value="12">Ängelholm</option>
+              <option value="13">Malmö</option>
             </select>
           </div>
           <!-- /.change location -->
@@ -217,30 +219,30 @@
     <!-- pent a car -->
     <section class="container">
       <h2 id="rentCar" class="section__title py-4 my-4">Rent a car</h2>
-      
-        <!-- radio-btn-group -->
-        <div class=" p-4">
-          <form class="d-flex flex-column  rent__button-group" action="">
-            <span>Type of vehicle:</span>
-            <div>
-              <input type="radio" id="car" name="car" value="car">
-              <label for="car">Car</label>
-            </div>
-            <div>
-              <input type="radio" id="van" name="van" value="van">
-              <label for="van">Van</label>
-            </div>
-            <div>
-              <input type="radio" id="bus" name="bus" value="bus">
-              <label for="bus">Bus</label>
-            </div>
-          </form>
-        </div>
-        <!-- /.radio-btn-group -->
-        <div class="location__wrapper">
+
+      <!-- radio-btn-group -->
+      <div class=" p-4">
+        <form class="d-flex flex-column  rent__button-group" action="">
+          <span>Type of vehicle:</span>
+          <div>
+            <input type="radio" id="car" name="car" value="car">
+            <label for="car">Car</label>
+          </div>
+          <div>
+            <input type="radio" id="van" name="van" value="van">
+            <label for="van">Van</label>
+          </div>
+          <div>
+            <input type="radio" id="bus" name="bus" value="bus">
+            <label for="bus">Bus</label>
+          </div>
+        </form>
+      </div>
+      <!-- /.radio-btn-group -->
+      <div class="location__wrapper">
         <!-- pickup -->
         <div class="item__border mt-4 p-4 item__time-card">
-          <h2 class="fw-bold text-center"> Pickup </h2>
+          <h2 class="fw-bold text-center fs-3"> Pickup </h2>
           <div class="location__input">
             <label for="location">Location</label>
             <div class="input-group mb-2 ">
@@ -249,48 +251,10 @@
           </div>
           <!-- /.location-input -->
           <!-- date -->
-          <div class="date__select">
-            <span>Date</span>
-            <form class="date__select-form" action="">
-
-              <!-- day -->
-              <select class="form-select  form-select-sm date__select-form__item" aria-label=".form-select-sm example"
-                id="date">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select>
-              <!-- month -->
-              <select class="form-select form-select-sm date__select-form__item" aria-label=".form-select-sm example"
-                id="month">
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
-              </select>
-              <!-- year -->
-              <select class="form-select form-select-sm date__select-form__item" aria-label=".form-select-sm example"
-                id="year">
-                <option value="2">2021</option>
-                <option value="3">2022</option>
-              </select>
+          <div class="date__select mb-3">
+            <form action="">
+              <label for="datemax">Date:</label><br>
+              <input class="form-control" type="date" id="datemax" name="datemax" max="2021-12-31">
             </form>
           </div>
           <!-- /.date -->
@@ -341,8 +305,8 @@
 
         <!-- destination -->
         <div class="item__border mt-4 p-4 item__time-card">
-          <h2 class="fw-bold text-center"> Destination </h2>
-          <div class="location__input">
+          <h2 class="fw-bold text-center fs-3"> Destination </h2>
+          <div class="location__input mb-3">
             <label for="location">Location</label>
             <div class="input-group mb-2 ">
               <input type="text" class="form-control" id="location" placeholder="address">
@@ -350,48 +314,10 @@
           </div>
           <!-- /.location-input -->
           <!-- date -->
-          <div class="date__select">
-            <span>Date</span>
-            <form class="date__select-form" action="">
-
-              <!-- day -->
-              <select class="form-select  form-select-sm date__select-form__item" aria-label=".form-select-sm example"
-                id="date">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select>
-              <!-- month -->
-              <select class="form-select form-select-sm date__select-form__item" aria-label=".form-select-sm example"
-                id="month">
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
-              </select>
-              <!-- year -->
-              <select class="form-select form-select-sm date__select-form__item" aria-label=".form-select-sm example"
-                id="year">
-                <option value="2">2021</option>
-                <option value="3">2022</option>
-              </select>
+          <div class="date__select mb-3">
+            <form action="">
+              <label for="datemax">Date:</label><br>
+              <input class="form-control" type="date" id="datemax" name="datemax" max="2021-12-31">
             </form>
           </div>
           <!-- /.date -->
@@ -446,231 +372,254 @@
     <!-- Choose from the cars -->
     <section class="car-available">
       <div class="container">
-      <h2 class="section__title py-4 my-4">Choose from the cars</h2>
+        <h2 class="section__title py-4 my-4">Choose from the cars</h2>
       </div>
       <!-- Carousel -->
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="container">
-        <ol class="carousel-indicators">
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
 
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col">
-                <div class="card">
-                  <img src="assets/imgs/car-items/volkswagen-golf-green.jpg" class="card-img-top" alt="volkswagen golf green">
-                  <div class="card-body">
-                    <h5 class="card-title">Volkswagen Golf </h5>
-                    <p class="card-text"> Volkswagen Golf is an electric  four-door hatchback with five seats. Though it doesn't set any records among compact cars for passenger space, adults can comfortably fit in the front and the rear seats.</p>
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <img src="assets/imgs/car-items/volkswagen-golf-green.jpg" class="card-img-top"
+                      alt="volkswagen golf green">
+                    <div class="card-body">
+                      <h5 class="card-title">Volkswagen Golf </h5>
+                      <p class="card-text"> Volkswagen Golf is an electric four-door hatchback with five seats. Though
+                        it doesn't set any records among compact cars for passenger space, adults can comfortably fit in
+                        the front and the rear seats.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col card__hide__tab">
-                <div class="card">
-                  <img src="assets/imgs/car-items/mercedes.jpg" class="card-img-top" alt="mercedes">
-                  <div class="card-body">
-                    <h5 class="card-title">Mercedes</h5>
-                    <p class="card-text">is powered by a front-mounted 132-kilowatt electric motor connected to a lithium-ion battery pack mounted beneath the floor. The motor's output, which translates to 177 horsepower and 251 pound-feet of torque.</p>
+                <div class="col card__hide__tab">
+                  <div class="card">
+                    <img src="assets/imgs/car-items/mercedes.jpg" class="card-img-top" alt="mercedes">
+                    <div class="card-body">
+                      <h5 class="card-title">Mercedes</h5>
+                      <p class="card-text">is powered by a front-mounted 132-kilowatt electric motor connected to a
+                        lithium-ion battery pack mounted beneath the floor. The motor's output, which translates to 177
+                        horsepower and 251 pound-feet of torque.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col card__hide__desc">
-                <div class="card">
-                  <img src="assets/imgs/car-items/tesla.jpg" class="card-img-top" alt="Tesla model 3">
-                  <div class="card-body">
-                    <h5 class="card-title">Tesla model 3</h5>
-                    <p class="card-text"> is an electric four-door fastback sedan developed by Tesla. The Model 3 Standard Range Plus version delivers an EPA-rated all-electric range of 263 miles (423 km) and the Long Range versions deliver 353 miles (568 km).</p>
+                <div class="col card__hide__desc">
+                  <div class="card">
+                    <img src="assets/imgs/car-items/tesla.jpg" class="card-img-top" alt="Tesla model 3">
+                    <div class="card-body">
+                      <h5 class="card-title">Tesla model 3</h5>
+                      <p class="card-text"> is an electric four-door fastback sedan developed by Tesla. The Model 3
+                        Standard Range Plus version delivers an EPA-rated all-electric range of 263 miles (423 km) and
+                        the Long Range versions deliver 353 miles (568 km).</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              
-            </div>
-            
-          </div>
 
+              </div>
 
-
-
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col">
-                <div class="card">
-                  <img src="assets/imgs/car-items/mercedes.jpg" class="card-img-top" alt="mercedes">
-                  <div class="card-body">
-                    <h5 class="card-title">Mercedes </h5>
-                    <p class="card-text">is powered by a front-mounted 132-kilowatt electric motor connected to a lithium-ion battery pack mounted beneath the floor. The motor's output, which translates to 177 horsepower and 251 pound-feet of torque.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col card__hide__tab">
-                <div class="card">
-                  <img src="assets/imgs/car-items/tesla.jpg" class="card-img-top" alt="tesla">
-                  <div class="card-body">
-                    <h5 class="card-title">Tesla model 3</h5>
-                    <p class="card-text"> is an electric four-door fastback sedan developed by Tesla. The Model 3 Standard Range Plus version delivers an EPA-rated all-electric range of 263 miles (423 km) and the Long Range versions deliver 353 miles (568 km).</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col card__hide__desc">
-                <div class="card">
-                  <img src="assets/imgs/car-items/volkswagen.jpg" class="card-img-top" alt="volkswagen">
-                  <div class="card-body">
-                    <h5 class="card-title">Volkswagen</h5>
-                    <p class="card-text"> has an 82-kWh battery sending juice to a single rear-mounted motor, returning 201 horsepower and 228 lb-ft of torque, but more importantly 250 miles of range on the EPA cycle.VW will sometime next year launch a dual-motor</p>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-
-
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col">
-                <div class="card">
-                  <img src="assets/imgs/car-items/volkswagen.jpg" class="card-img-top" alt="volkswagen">
-                  <div class="card-body">
-                    <h5 class="card-title">Volkswagen </h5>
-                    <p class="card-text">has an 82-kWh battery sending juice to a single rear-mounted motor, returning 201 horsepower and 228 lb-ft of torque, but more importantly 250 miles of range on the EPA cycle. VW will sometime next year launch a dual-motor.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col card__hide__tab">
-                <div class="card">
-                  <img src="assets/imgs/car-items/volkswagen-golf-green.jpg" class="card-img-top" alt="volkswagen golf green">
-                  <div class="card-body">
-                    <h5 class="card-title">Volkswagen Golf</h5>
-                    <p class="card-text">Volkswagen Golf is an electric four-door hatchback with five seats. Though it doesn't set any records among compact cars for passenger space, adults can comfortably fit in the front and the rear seats.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col card__hide__desc">
-                <div class="card">
-                  <img src="assets/imgs/car-items/mercedes.jpg" class="card-img-top" alt="mercedes">
-                  <div class="card-body">
-                    <h5 class="card-title">Mercedes</h5>
-                    <p class="card-text">is an electric four-door fastback sedan developed by Tesla. The Model 3 Standard Range Plus version delivers an EPA-rated all-electric range of 263 miles (423 km) and the Long Range versions deliver 353 miles (568 km).</p>
-                  </div>
-                </div>
-              </div>
-              
             </div>
 
 
+
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <img src="assets/imgs/car-items/mercedes.jpg" class="card-img-top" alt="mercedes">
+                    <div class="card-body">
+                      <h5 class="card-title">Mercedes </h5>
+                      <p class="card-text">is powered by a front-mounted 132-kilowatt electric motor connected to a
+                        lithium-ion battery pack mounted beneath the floor. The motor's output, which translates to 177
+                        horsepower and 251 pound-feet of torque.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col card__hide__tab">
+                  <div class="card">
+                    <img src="assets/imgs/car-items/tesla.jpg" class="card-img-top" alt="tesla">
+                    <div class="card-body">
+                      <h5 class="card-title">Tesla model 3</h5>
+                      <p class="card-text"> is an electric four-door fastback sedan developed by Tesla. The Model 3
+                        Standard Range Plus version delivers an EPA-rated all-electric range of 263 miles (423 km) and
+                        the Long Range versions deliver 353 miles (568 km).</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col card__hide__desc">
+                  <div class="card">
+                    <img src="assets/imgs/car-items/volkswagen.jpg" class="card-img-top" alt="volkswagen">
+                    <div class="card-body">
+                      <h5 class="card-title">Volkswagen</h5>
+                      <p class="card-text"> has an 82-kWh battery sending juice to a single rear-mounted motor,
+                        returning 201 horsepower and 228 lb-ft of torque, but more importantly 250 miles of range on the
+                        EPA cycle.VW will sometime next year launch a dual-motor</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <img src="assets/imgs/car-items/volkswagen.jpg" class="card-img-top" alt="volkswagen">
+                    <div class="card-body">
+                      <h5 class="card-title">Volkswagen </h5>
+                      <p class="card-text">has an 82-kWh battery sending juice to a single rear-mounted motor, returning
+                        201 horsepower and 228 lb-ft of torque, but more importantly 250 miles of range on the EPA
+                        cycle. VW will sometime next year launch a dual-motor.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col card__hide__tab">
+                  <div class="card">
+                    <img src="assets/imgs/car-items/volkswagen-golf-green.jpg" class="card-img-top"
+                      alt="volkswagen golf green">
+                    <div class="card-body">
+                      <h5 class="card-title">Volkswagen Golf</h5>
+                      <p class="card-text">Volkswagen Golf is an electric four-door hatchback with five seats. Though it
+                        doesn't set any records among compact cars for passenger space, adults can comfortably fit in
+                        the front and the rear seats.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col card__hide__desc">
+                  <div class="card">
+                    <img src="assets/imgs/car-items/mercedes.jpg" class="card-img-top" alt="mercedes">
+                    <div class="card-body">
+                      <h5 class="card-title">Mercedes</h5>
+                      <p class="card-text">is an electric four-door fastback sedan developed by Tesla. The Model 3
+                        Standard Range Plus version delivers an EPA-rated all-electric range of 263 miles (423 km) and
+                        the Long Range versions deliver 353 miles (568 km).</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
           </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
-      </div>
       </div>
       <!-- /.Carousel -->
     </section>
     <!-- /.Choose from the cars -->
 
     <div class="container my-4 text-end">
-      <button type="button" class="btn d-block m-auto mb-3 px-4  btn__custom" data-bs-toggle="modal" data-bs-target="#calculateTheCost">Calculate the cost</button>
+      <button type="button" class="btn d-block m-auto mb-3 px-4  btn__custom" data-bs-toggle="modal"
+        data-bs-target="#calculateTheCost">Calculate the cost</button>
     </div>
   </main>
 
 
 
 
-<!-- Modal costs calculate-->
-<div class="modal fade" id="calculateTheCost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Your price is 500 SEK</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body d-flex align-items-center justify-content-around">
-        <div class="modal__img-wrapper">
-        <img class="modal__img" src="assets/imgs/car-items/Mercedes_EQS.jpg" alt="mercedes">
+  <!-- Modal costs calculate-->
+  <div class="modal fade" id="calculateTheCost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Your price is 500 SEK</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal__text-wrapper">
-        <textarea id="messageToOwner" name="messageToOwner" rows="4" cols="50" placeholder="type a message to the car owner..."></textarea>
+        <div class="modal-body d-flex align-items-center justify-content-around">
+          <div class="modal__img-wrapper">
+            <img class="modal__img" src="assets/imgs/car-items/Mercedes_EQS.jpg" alt="mercedes">
+          </div>
+          <div class="modal__text-wrapper">
+            <textarea id="messageToOwner" name="messageToOwner" rows="4" cols="50"
+              placeholder="type a message to the car owner..."></textarea>
+          </div>
         </div>
-      </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn__back fw-normal" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn__custom m-0" data-bs-toggle="modal" data-bs-target="#orderConfirm">Confirm</button>
+        <div class="modal-footer">
+          <button type="button" class="btn btn__back fw-normal" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn__custom m-0" data-bs-toggle="modal"
+            data-bs-target="#orderConfirm">Confirm</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!-- /.Modal costs calculate -->
+  <!-- /.Modal costs calculate -->
 
-<!-- Modal confirm the order-->
-<div class="modal fade" id="orderConfirm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content secondWindow">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Your price is 500 SEK</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body d-flex align-items-center justify-content-around">
-        <div class="modal__img-wrapper">
-        <img class="modal__img" src="assets/imgs/car-items/Mercedes_EQS.jpg" alt="mercedes">
+  <!-- Modal confirm the order-->
+  <div class="modal fade" id="orderConfirm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content secondWindow">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Your price is 500 SEK</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal__text-wrapper ">
-          <p class="fw-bold mb-3">Mercedes Future Monstercar1<br>
-          <span class="fw-normal">registration number:</span> 23456FDC
-          </p>
-          <p class="modal__text">This  is an electric four-door fastback sedan
-            The Future Monstercar1 version delivers an 
-            EPA-rated all-electric range of 263 miles
-            (423 km) and the Long Range versions deliver
-            353 miles (568 km).</p>
+        <div class="modal-body d-flex align-items-center justify-content-around">
+          <div class="modal__img-wrapper">
+            <img class="modal__img" src="assets/imgs/car-items/Mercedes_EQS.jpg" alt="mercedes">
+          </div>
+          <div class="modal__text-wrapper ">
+            <p class="fw-bold mb-3">Mercedes Future Monstercar1<br>
+              <span class="fw-normal">registration number:</span> 23456FDC
+            </p>
+            <p class="modal__text">This is an electric four-door fastback sedan
+              The Future Monstercar1 version delivers an
+              EPA-rated all-electric range of 263 miles
+              (423 km) and the Long Range versions deliver
+              353 miles (568 km).</p>
 
+          </div>
         </div>
-      </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn__back fw-normal" data-bs-dismiss="modal">Close</button>
-        <a  href="mapClientPage.html" class="btn btn__custom m-0">Where is the car?</a>
+        <div class="modal-footer">
+          <button type="button" class="btn btn__back fw-normal" data-bs-dismiss="modal">Close</button>
+          <a href="mapClientPage.html" class="btn btn__custom m-0">Where is the car?</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!-- /.Modal confirm the order -->
+  <!-- /.Modal confirm the order -->
 
-<!-- Modal no message-->
-<div class="modal fade" id="noMessage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content secondWindow">
-      <div class="modal-header">
-        <h5 class="modal-title fw-bold" id="exampleModalLabel">You don't nave messages</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body d-flex align-self-center justify-content-center fs-1">
-        <p>¯\_(ツ)_/¯</p>
-      </div>
+  <!-- Modal no message-->
+  <div class="modal fade" id="noMessage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content secondWindow">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="exampleModalLabel">You don't nave messages</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-self-center justify-content-center fs-1">
+          <p>¯\_(ツ)_/¯</p>
+        </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn__back fw-normal" data-bs-dismiss="modal">Close</button>
+        <div class="modal-footer">
+          <button type="button" class="btn btn__back fw-normal" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!-- /.Modal no message -->
+  <!-- /.Modal no message -->
 
-<!-- !!!!Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#noMessage">
+  <!-- !!!!Button trigger modal -->
+  <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#noMessage">
   Launch demo modal
 </button> -->
-<!-- !!!!! --> 
+  <!-- !!!!! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="assets/scripts/bootstrap.bundle.js"></script>

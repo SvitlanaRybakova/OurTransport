@@ -104,34 +104,100 @@
     </nav>
     <!-- /.desktop menu -->
   </header>
-
   <main>
-    
+    <section class="container">
+
+      <div class="d-flex">
+        <div>
+          <h2 class="section__title my-4">Sign up now</h2>
+
+
+          <div class="item__border p-5 me-4">
+            <form action="">
+              <div class="mb-3">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email address">
+                <span class="neverShare">We’ll never share your email with anyone else.</span>
+              </div>
+
+              <label for="name">Full name:</label>
+              <input type="text" class="form-control mb-2" id="name" placeholder="Mark Peterson">
+
+              <label for="personNumber">Phone number:</label>
+              <input type="tel" class="form-control mb-2" id="number" placeholder="072 786 89 89">
+
+              <label for="password">Creat password:</label>
+              <input type="password" class="form-control mb-2" id="password" placeholder="***********">
+
+              <label for="city">City:</label>
+              <select class="form-select  d-inline" id="city" role="choose the city">
+                <option value="1">Eslöv</option>
+                <option value="2">Helsingborg</option>
+                <option value="3">Hässleholm</option>
+                <option value="4">Höganäs</option>
+                <option value="5">Kristianstad</option>
+                <option value="6">Landskrona</option>
+                <option value="7">Lund</option>
+                <option value="8">Simrishamn</option>
+                <option value="9">Skanör Falsterbo</option>
+                <option value="10">Trelleborg</option>
+                <option value="11">Ystad</option>
+                <option value="12">Ängelholm</option>
+                <option value="13">Malmö</option>
+              </select>
+            </form>
+            <h2 class="fw-bold text-center fs-3 mt-5 mb-3"> Terms and conditions </h2>
+            <p>Topping cookie jujubes topping biscuit muffin dessert bonbon. Sweet roll jelly-o liquorice. Biscuit
+              gummies pie chocolate cake candy canes halvah caramels liquorice brownie.Carrot cake brownie carrot cake
+              apple pie halvah cake fruitcake donut liquorice.</p>
+
+            <form class="m-3">
+              <input type="checkbox" id="approved" name="approved" value="approved">
+              <label for="approved"> Approved</label>
+            </form>
+            <div class="personal-item text-center mt-5">
+              <!-- todo implement owners register -->
+              <a href="#" class="btn d-block m-auto mb-3 btn__custom">Register as an owner</a>
+              <button type="button" class="btn w-100 m-auto btn__custom" data-bs-toggle="modal"data-bs-target="#login">Register as a user</button>
+            </div>
+          </div>
+        </div>
+        <aside class="decktop__only">
+          <h2 class="fw-bold text-center fs-3 mt-5 mb-3">Earn any time anywhere</h2>
+          <img src="assets/imgs/car-items/red-car.jpg" alt="red car">
+          <h2 class="fw-bold text-center fs-3 mt-5 mb-3">Set your own schedule</p>
+            <img src="assets/imgs/car-items/orange-car.jpg" alt="orange car">
+        </aside>
+      </div>
+    </section>
+
+
+
     <!-- Modal login-->
     <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="fw-bold">Log in</h5>
+            <h5 class="fw-bold">Congratulations, you have been registered</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body p-5">
+          <div class="modal-body d-flex flex-column align-items-center">
+            <p>Please, log in now</p>
             <form action="" class="">
-              <div class="col d-flex justify-content-around mb-3">
-                <label class="fw-bold" for="userName">User name:</label>
+              <div class="col mb-3">
+                <label class="fw-bold me-2" for="userName">User name:</label>
                 <input class="ps-2" type="text" id="userName" name="userName" placeholder="User name">
               </div>
-              <div class="col d-flex justify-content-around">
-                <label class="fw-bold" for="password">Password:</label>
+              <div class="col ">
+                <label class="fw-bold me-3" for="password">Password:</label>
                 <input class="ps-2" type="password" id="password" name="password" placeholder="Password">
               </div>
             </form>
           </div>
 
           <div class="modal-footer justify-content-around">
-            <!-- TODO -->
-            <a href="#" class="btn btn__custom m-0">as an owner </a>
-            <a href="clientProfile.html" class="btn btn__custom m-0">as a user</a>
+            
+            <a href="clientProfile.html" class="btn btn__custom m-0">Log in</a>
           </div>
         </div>
       </div>
