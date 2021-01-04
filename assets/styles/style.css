@@ -4,6 +4,8 @@ body {
   color: #55595C;
 }
 
+/* *******index.ntml******* */
+
 /* header with menu desktop */
 
 .navbar__logo {
@@ -11,6 +13,7 @@ body {
 }
 
 .nav__btn {
+  cursor: pointer;
   font-size: 1.05rem;
   border-radius: 0.3rem;
 }
@@ -62,6 +65,70 @@ body {
 
 #navbarSupportedContent {
   height: calc(100vh - 100px);
+}
+
+/* main img with overlay */
+
+.main__bg {
+  width: 100%;
+  height: calc(31.25rem - 6.25rem);
+  background-image: url(../imgs/carFromFuture.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(209, 193, 189, 0.41);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header__text {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+.aboutUs{
+  margin: 50px 0px;
+}
+
+.aboutUs__card {
+  position: relative;
+  max-width: 190px;
+  border: 1px solid #D1C1BD;
+  border-radius: 0px;
+  box-shadow: 0rem 0.1rem 0.37rem #000000;
+  margin: 0 auto;
+  padding: 45px 10px 10px 10px;
+}
+
+.aboutUs__card-icons {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.aboutUs__card-title {
+  font-size: 1.25rem;
+  color: #42556A;
+  text-align: center;
+}
+
+.aboutUs__subtitle {
+  font-size: 1rem;
+  color: #000;
+}
+
+.aboutUs__text {
+  font-size: 14px;
 }
 
 /* **---------clientProfile-----------** */
@@ -231,6 +298,18 @@ iframe {
   body {
     border: 1px green solid;
   }
+  .main__bg {
+    height: calc(75vh - 6.25rem);
+  }
+  .main__button > .btn__custom{
+    display: inline-block !important;
+    margin-bottom: 0rem !important;
+    margin: 0 auto;
+    width: 30%!important;
+  }
+  .main__button > .btn__custom:first-child{
+    margin-right: 20px !important;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -239,13 +318,24 @@ iframe {
   body {
     border: 1px solid yellow;
   }
+  .main__bg {
+    height: calc(100vh - 6.25rem);
+  }
+
+  .header__text {
+    font-size: 1.7rem;
+  }
+
   .section__title {
     font-size: 2.1rem;
   }
+
+  
   /* header */
   .nav__btn--signUp::after, .nav__btn--logIn::after {
     content: "";
   }
+
   .nav__btn--signUp:hover, .nav__btn--logIn:hover {
     box-shadow: white 0px 1px 8px;
     background-color: #212529;
@@ -283,6 +373,24 @@ iframe {
   .social-link {
     display: none;
   }
+  /* main img with overlay */
+  .overlay {
+    position: relative;
+  }
+
+  .main__tagline-wrapper {
+    max-width: 23.1rem;
+    position: absolute;
+    left: 0;
+    right: 50%;
+  }
+  
+  .aboutUs__subtitle{
+    text-align: center;
+    font-size: 1.5rem;
+
+  }
+
   /* **---------clientProfile-----------** */
   /* menu */
   .btn__lang__hide {
@@ -310,6 +418,8 @@ iframe {
     display: flex;
     justify-content: space-evenly;
   }
+
+  /* !!!!!! */
   .btn__custom {
     display: inline-block !important;
     margin-bottom: 0rem !important;
@@ -334,8 +444,8 @@ iframe {
   .decktop__only {
     display: flex;
   }
-}
 
+}
 /* X-Large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
@@ -345,4 +455,5 @@ iframe {
   .card__hide__desc {
     display: block;
   }
+  
 }
