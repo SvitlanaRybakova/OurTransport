@@ -4339,6 +4339,7 @@
       EventHandler.on(this._element, EVENT_CLICK_DISMISS, SELECTOR_DATA_DISMISS, function (event) {
         return _this2.hide(event);
       });
+      
       EventHandler.on(this._dialog, EVENT_MOUSEDOWN_DISMISS, function () {
         EventHandler.one(_this2._element, EVENT_MOUSEUP_DISMISS, function (event) {
           if (event.target === _this2._element) {
