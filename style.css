@@ -1,0 +1,437 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.theme-border-radius {
+    border-radius: 35px;
+}
+
+.person-icon {
+    background-image: url("assets/imgs/icons/user-outlined.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+h1.main-title {
+    color:#C36969
+}
+
+.theme-border-form {
+   border:solid 1px #E5DBD9;
+}
+
+.theme-info {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.theme-form-padding {
+    padding: 2rem;
+}
+
+.theme-btn-primary {
+    background-color: #C36969;
+    border-color:#C36969 ;
+    font-weight: bold;
+}
+
+.theme-btn-color {
+    color: #FFF9F9;
+}
+
+.theme-shadow {
+    border: 1px solid #C36969;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.sign-up-image-red {
+    max-width: 100%;
+}
+
+.sign-up-image-orange {
+    max-width: 75%;
+}
+
+.footer-color {
+    color: #FFF9F9 ;
+}
+
+.bg-color-theme {
+    background-color: #444141;
+}
+
+.font-all-right {
+    color: #C9C9C9;
+}
+
+.language-icon {
+    background-image: url("assets/imgs/icons/lang-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+   
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+.nav-link span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.location-icon{
+    background-image: url("assets/imgs/icons/location.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+}
+
+.facebook-icon {
+    background-image: url("assets/imgs/icons/facebook.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+}
+
+.linkedin-icon{
+    background-image: url("assets/imgs/icons/linkedin.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+}
+
+.instagram-icon {
+    background-image: url("assets/imgs/icons/instagram.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+}
+
+.twitter-icon {
+    background-image: url("assets/imgs/icons/twitter.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+}
+
+.footer-list-icon,
+.header-list-icon {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list-icon li {
+    padding-right: 15px;
+}
+
+.footer-bottom {
+    flex-direction: column-reverse;
+}
+
+.footer-bottom .footer-list-icon {
+    justify-content: flex-start;
+}
+
+.footer-top .footer-list-icon{
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header-list-icon li {
+    padding-left: 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-collapse {
+    text-align: center;
+    position: relative;
+}
+
+.navbar-collapse .navbar-nav {
+    width: 60%;
+    margin: auto;
+}
+
+.navbar-collapse .navbar-nav .nav-item.dropdown {
+    border: solid 1px #ddd;
+    border-radius: 10px;
+}
+
+.navbar-collapse .navbar-nav .nav-item.dropdown .nav-link {
+    text-align: left;
+    padding-left: 15px;
+    background-color: #C36969;
+    border-radius: 10px;
+}
+
+.navbar-collapse .navbar-nav .nav-item.dropdown.show .nav-link {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link.dropdown-toggle::after {
+    position: absolute;
+    right: 15px;
+    top: 18px;
+}
+
+.navbar-collapse .navbar-nav .nav-item.dropdown {
+    margin-bottom: 15px;
+}
+
+.navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: #fff;
+    border-top: solid 1px #ddd;
+    background-color: #6E6868;
+    text-align: center;
+}
+
+.navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navbar-collapse.collapsing,
+.navbar-collapse.show {
+    height: calc(100vh - 106px) !important;
+}
+
+.header-list-icon {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+}
+
+.menu-language-item {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    border-bottom: none !important;
+}
+
+.navbar.logged-in .navbar-collapse .navbar-nav .nav-item {
+    border-bottom: solid 1px #ddd;
+} 
+
+.navbar.logged-in .navbar-collapse .navbar-nav .nav-item:last-child {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom: none;
+}
+
+.navbar.logged-in .navbar-collapse .navbar-nav {
+    border: solid 1px #ddd;
+    background: #6E6868;
+    border-radius: 10px;
+}
+
+.user-info-image {
+    max-width: 100%;
+    border-radius: 50%;
+    width: 80px;
+    margin-top: 10px;
+}
+
+.user-info-image-desktop {
+    max-width: 100%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.user-info-name {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.user-info-name-desktop {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.message-icon {
+    margin-bottom: 10px;
+    margin-right: 15px;
+    position: relative;
+    background: transparent;
+    outline: none !important;
+    border: none;
+}
+
+.message-icon-desktop {
+    position: relative;
+    background: transparent;
+    outline: none !important;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.message-badge {
+    position: absolute;
+    top: -9px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 1px #707070;
+    background: #fff;
+    color: #FF0630;
+    font-size: 17px;
+    line-height: 19px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.message-badge-desktop {
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid 1px #707070;
+    background: #fff;
+    color: #FF0630;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.message-icon-image {
+    height: 26px;
+}
+
+.message-icon-image-desktop {
+    height: 18px;
+}
+
+.menu-checkbox {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+}
+
+.header-location {
+    color: #fff;
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+}
+
+.bg-theme {
+    background-color: #C36969;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .navbar-collapse.show{
+        height: auto !important;
+    }
+
+    .navbar-collapse .navbar-nav {
+        width: auto;
+        margin: 0;
+        margin-top: 0;
+    }
+
+    .navbar-collapse .navbar-nav .nav-item {
+        border: none;
+        padding-left: 15px;
+    }
+
+    .navbar-collapse .navbar-nav .nav-item .nav-link {
+        padding-left: 0;
+        background-color: transparent;
+    }
+
+    .menu-language-item {
+        position: static;
+    }
+
+    .footer-bottom {
+        flex-direction: row;
+    }
+
+    .footer-bottom  .footer-list-icon {
+        justify-content: flex-end;
+    }
+
+    .footer-list-icon li {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+
+    .footer-top .footer-list-icon{
+        flex-direction: row;
+    }
+
+    .navbar.logged-in .navbar-collapse .navbar-nav {
+        border: none;
+        background: transparent;
+    }
+
+    .navbar.logged-in .navbar-collapse .navbar-nav .nav-item {
+        border: none;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .sign-up-image-orange {
+        max-width: 51%;
+    }
+}
