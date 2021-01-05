@@ -298,6 +298,9 @@ iframe {
   body {
     border: 1px green solid;
   }
+  #navbarSupportedContent{
+    height: auto;
+  }
   .main__bg {
     height: calc(75vh - 6.25rem);
   }

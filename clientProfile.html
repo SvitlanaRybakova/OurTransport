@@ -51,7 +51,7 @@
                     <li class="nav-item">
                         <button type="button" class="message-icon-desktop" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img src="assets/imgs/icons/email.svg" class="message-icon-image-desktop">
-                            <div class="message-badge-desktop">1</div>
+                            <!-- <div class="message-badge-desktop">1</div> -->
                         </button>
                     </li>
                     <li class="nav-item d-flex">
@@ -74,29 +74,28 @@
                             <span>En</span>
                         </a>
                     </li>
-                    <!-- TODO implement links -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="index.html#about">
                             <span>Home</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="clientProfile.html">
                             <span>Profile Page</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">
+                      <a class="nav-link" href="mapClientPage.html">
                           <span>Show the map</span>
                       </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="clientProfile.html#rentCar">
                         <span>Rent a car</span>
                     </a>
                 </li>
                     <li class="nav-item bg-theme">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="index.html">
                             <span>Log out</span>
                         </a>
                     </li>
@@ -516,7 +515,66 @@
   </main>
 
 
-
+  <footer class="bg-color-theme footer-color py-5">
+    <div class="container">
+        <div class="row pb-5 footer-top">
+            <div class="col-12 col-md-6">
+                <div class="pb-3">
+                    Our Transport, Inc.<br>
+                    1355 Market St, Suite 900<br>
+                    San Francisco, CA 94103<br>
+                    P: (123) 456-7890
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <ul class="d-flex justify-content-end footer-list-icon">
+                    <li>
+                        <i class="language-icon d-inline-block align-middle"></i>
+                        <span class="d-inline-block align-middle">En</span>
+                    </li>
+                    <li>
+                        <i class="location-icon d-inline-block align-middle"></i>
+                        <span class="d-inline-block align-middle">Malmö</span>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+        <div class="row footer-bottom">
+            <div class="col-12 col-md-6">
+                <div class="d-none d-md-block">
+                    For additional questions, contact info@transport.com
+                </div>
+                <div class="font-all-right">
+                    © 2020 Our Transport. All right reserved.
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <ul class="d-flex footer-list-icon">
+                    <li>
+                        <a href="#">
+                            <i class="facebook-icon d-inline-block align-middle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="linkedin-icon d-inline-block align-middle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="instagram-icon d-inline-block align-middle"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="twitter-icon d-inline-block align-middle"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
   <!-- Modal costs calculate-->
   <div class="modal fade" id="calculateTheCost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -600,11 +658,7 @@
   </div>
   <!-- /.Modal no message -->
 
-  <!-- !!!!Button trigger modal -->
-  <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#noMessage">
-  Launch demo modal
-</button> -->
-  <!-- !!!!! -->
+
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="assets/scripts/bootstrap.bundle.js"></script>
