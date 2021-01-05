@@ -72,7 +72,7 @@ body {
 .main__bg {
   width: 100%;
   height: calc(31.25rem - 6.25rem);
-  background-image: url(../imgs/carFromFuture.jpg);
+  background-image: url(../imgs/carFromFuture.png);
   background-position: center;
   background-size: cover;
 }
@@ -283,7 +283,11 @@ iframe {
   font-size: 14px;
   color: #818A91;
 }
-
+/* ********ownerLogged.html */
+.owner-info{
+  padding: 20px 0px;
+  flex-basis: 70%;
+}
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
@@ -422,7 +426,6 @@ iframe {
     justify-content: space-evenly;
   }
 
-  /* !!!!!! */
   .btn__custom {
     display: inline-block !important;
     margin-bottom: 0rem !important;

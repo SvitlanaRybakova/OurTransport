@@ -193,10 +193,11 @@ h1.main-title {
     border-radius: 10px;
 }
 
-.navbar-collapse .navbar-nav .nav-item.dropdown.show .nav-link {
+.navbar-collapse .navbar-nav .nav-item.dropdown .nav-link.show {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
+
 
 .navbar-collapse .navbar-nav .nav-item .nav-link.dropdown-toggle::after {
     position: absolute;

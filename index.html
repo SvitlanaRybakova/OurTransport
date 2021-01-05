@@ -11,109 +11,102 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Our Transport</title>
 
 </head>
 
 <body>
+
   <header>
-    <!--  menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar__desktop">
-      <div class=" container d-flex ">
-        <a class="navbar-brand" href="index.html"><img class="navbar__logo" src="assets/imgs/logo.png"
-            alt="the companies logo"></a>
-        <!-- burger menu-btn-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-color-theme">
+      <div class="container">
         <button class="navbar-toggler burger-btn" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="justify-content-end collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="navbar-nav ul__items">
+        <a class="navbar-brand" href="index.html"><img class="logo " src="assets/imgs/logo.png"
+            alt="Our-transport-logo"></a>
 
-            <!-- change language -->
-            <li class="nav-item btn__lang__hide nav__btn">
-              <div class="d-flex nav-link">
-                <img class="pe-1" src="assets/imgs/icons/lang-icon.svg" alt="change language">
-                <select class="form-select fs-6  form-select-sm  btn-dark bg-dark d-inline "
-                  aria-label="form-select-sm example" role="switch to English language">
-                  <option value="1">En</option>
-                  <option value="2">Sw</option>
-                </select>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+          <ul class="navbar-nav theme-right">
+            <li class="nav-item menu-language-item">
+              <a class="nav-link" href="#">
+                <i class="language-icon d-inline-block align-middle"></i>
+                <span>En</span>
+              </a>
+            </li>
+            <li class="nav-item d-none d-md-block">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#login">
+                <i class="person-icon d-inline-block align-middle"></i>
+                <span>Log in</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown d-md-none">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLogin" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="person-icon align-middle d-none d-md-inline-block"></i>
+                <span>Log in</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownLogin">
+                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#owner">As a car owner</a>
+                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#user" >As a car user</a>
               </div>
             </li>
-            <!-- /.change language -->
-
-            <!-- log in -->
-            <li class="nav-item">
-              <a href="#" class="btn nav__btn--logIn nav__btn" data-bs-toggle="modal" data-bs-target="#login">Log in</a>
+            <li class="nav-item d-none d-md-block">
+              <a class="btn bg-white theme-border-radius" href="signUp.html">
+                <span>Sign up</span>
+              </a>
             </li>
-
-
-
-            <!-- sign up -->
-            <li class="nav-item mt-2 mb-1">
-              <a href="signUp.html" class="btn btn-dark  nav__btn nav__btn--signUp">Sign up</a>
+            <li class="nav-item dropdown d-md-none">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSignUp" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <span>Sign up</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownSignUp">
+                <a class="dropdown-item" href="signUp.html">As a car owner</a>
+                <a class="dropdown-item" href="signUp.html">As a car user</a>
+              </div>
             </li>
-
-
           </ul>
-
-          <!-- social link -->
-          <div class="container menu__social--mobile ">
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-1 text-white ">
-                <a class="social-link nav__btn" href="facebook.com"><img src="assets/imgs/icons/facebook.svg"
-                    alt="go to the facebook"></a>
-              </div>
-              <div class="col-1 text-white">
-                <a class="social-link nav__btn" href="linkedin.com"><img src="assets/imgs/icons/linkedin.svg"
-                    alt="go to the linkedin"></a>
-              </div>
-              <div class="col-1 text-white">
-                <a class="social-link nav__btn" href="instagram.com"><img src="assets/imgs/icons/instagram.svg"
-                    alt="go to the instagram"></a>
-              </div>
-              <div class="col-1 text-white">
-                <a class="social-link nav__btn" href="twitter.com"><img src="assets/imgs/icons/twitter.svg"
-                    alt="go to the twitter"></a>
-              </div>
-              <div class="col-4"></div>
-            </div>
-          </div>
-          <!-- /.social-link -->
-
-          <!-- change language -->
-
-          <div class="position-absolute bottom-0 end-0 px-2  d-flex nav-link mobile__only nav__btn">
-            <img class="pe-1" src="assets/imgs/icons/lang-icon.svg" alt="change language">
-            <select class="form-select  form-select-sm  btn-dark bg-dark d-inline " aria-label="form-select-sm example"
-              role="switch to English language">
-              <option value="1">En</option>
-              <option value="2">Sw</option>
-            </select>
-          </div>
-
-          <!-- /.change language -->
-
+          <ul class="d-flex justify-content-center header-list-icon">
+            <li>
+              <a href="#">
+                <i class="facebook-icon d-inline-block align-middle"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="linkedin-icon d-inline-block align-middle"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="instagram-icon d-inline-block align-middle"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="twitter-icon d-inline-block align-middle"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <!-- /.collapse -->
       </div>
     </nav>
-    <!-- /.desktop menu -->
   </header>
 
-  <main>
+  <main class="mb-5">
     <!-- main image -->
     <section class="main__bg position-relative">
       <div class="overlay d-flex align-items-center">
         <div class="container d-flex flex-column justify-content-center align-items-center main__tagline-wrapper">
           <p class="header__text">vestibulum venenatis molestie
             placerat. morbi eget nisl arcu. </p>
-          <!-- Todo link -->
-          <a href="#" class="btn btn__custom d-block header__button">Read more</a>
+
+          <a href="#about" class="btn btn__custom d-block header__button">Read more</a>
         </div>
       </div>
     </section>
@@ -322,15 +315,74 @@
     <!-- /.Carousel -->
 
     <!--buttons -->
-    <div class="personal-item text-center mt-5 main__button">
-      <!-- todo implement owners register -->
-      <a href="#" class="btn d-block m-auto mb-3 btn__custom">Sign up</a>
-      <button type="button" class="btn w-100 m-auto btn__custom" data-bs-toggle="modal"data-bs-target="#login2">Login</button>
+    <div class="personal-item text-center mt-5 mb-5 main__button">
+      <a href="signUp.html" class="btn d-block m-auto mb-3 btn__custom">Sign up</a>
+      <button type="button" class="btn w-100 m-auto btn__custom" data-bs-toggle="modal"
+        data-bs-target="#login">Login</button>
     </div>
     <!-- /.buttons -->
 
 
-
+    <footer class="bg-color-theme footer-color py-5">
+      <div class="container">
+        <div class="row pb-5 footer-top">
+          <div class="col-12 col-md-6">
+            <div class="pb-3">
+              Our Transport, Inc.<br>
+              1355 Market St, Suite 900<br>
+              San Francisco, CA 94103<br>
+              P: (123) 456-7890
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <ul class="d-flex justify-content-end footer-list-icon">
+              <li>
+                <i class="language-icon d-inline-block align-middle"></i>
+                <span class="d-inline-block align-middle">En</span>
+              </li>
+              <li>
+                <i class="location-icon d-inline-block align-middle"></i>
+                <span class="d-inline-block align-middle">Malmö</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row footer-bottom">
+          <div class="col-12 col-md-6">
+            <div class="d-none d-md-block">
+              For additional questions, contact info@transport.com
+            </div>
+            <div class="font-all-right">
+              © 2020 Our Transport. All right reserved.
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <ul class="d-flex footer-list-icon">
+              <li>
+                <a href="#">
+                  <i class="facebook-icon d-inline-block align-middle"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="linkedin-icon d-inline-block align-middle"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="instagram-icon d-inline-block align-middle"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="twitter-icon d-inline-block align-middle"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
 
@@ -357,16 +409,16 @@
           </div>
 
           <div class="modal-footer justify-content-around">
-            <!-- TODO -->
-            <a href="#" class="btn btn__custom m-0">as an owner </a>
+            <a href="ownerLoggedIn.html" class="btn btn__custom m-0">as an owner </a>
             <a href="clientProfile.html" class="btn btn__custom m-0">as a user</a>
           </div>
         </div>
       </div>
     </div>
     <!-- /.Modal login -->
-    <!-- Modal login2 in the bottom of page-->
-    <div class="modal fade" id="login2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <!-- Modal login for owner-->
+    <div class="modal fade" id="owner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -388,15 +440,43 @@
 
           <div class="modal-footer justify-content-around">
             <!-- TODO -->
-            <a href="#" class="btn btn__custom m-0">as an owner </a>
+            <a href="ownerLoggedIn.html" class="btn btn__custom m-0">as an owner </a>
+            <!-- <a href="clientProfile.html" class="btn btn__custom m-0">as a user</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.Modal login for owner -->
+
+    <!-- Modal login for user-->
+    <div class="modal fade" id="user" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="fw-bold">Log in</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-5">
+            <form action="" class="">
+              <div class="col d-flex justify-content-around mb-3">
+                <label class="fw-bold" for="userName">User name:</label>
+                <input class="ps-2" type="text" id="userName" name="userName" placeholder="User name">
+              </div>
+              <div class="col d-flex justify-content-around">
+                <label class="fw-bold" for="password">Password:</label>
+                <input class="ps-2" type="password" id="password" name="password" placeholder="Password">
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer justify-content-around">
             <a href="clientProfile.html" class="btn btn__custom m-0">as a user</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- /.Modal login -->
+    <!-- /.Modal login for owner -->
   </main>
-
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="assets/scripts/bootstrap.bundle.js"></script>
 
