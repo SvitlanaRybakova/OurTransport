@@ -291,17 +291,13 @@ iframe {
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
-  body {
-    border: 1px solid red;
-  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-  body {
-    border: 1px green solid;
-  }
+
   #navbarSupportedContent{
     height: auto;
   }
@@ -319,12 +315,15 @@ iframe {
   }
 }
 
+.w-60 {
+  width: 60%;
+  margin: auto;
+}
+
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-  body {
-    border: 1px solid yellow;
-  }
+
   .main__bg {
     height: calc(100vh - 6.25rem);
   }
@@ -455,9 +454,6 @@ iframe {
 /* X-Large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
-  body {
-    border: 2px solid blue;
-  }
   .card__hide__desc {
     display: block;
   }

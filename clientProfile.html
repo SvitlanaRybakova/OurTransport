@@ -27,7 +27,7 @@
         </button>
         <div class="d-flex align-items-end">
           <button type="button" class="message-icon d-md-none" data-bs-toggle="modal" data-bs-target="#message">
-            <img src="assets/imgs/icons/email.svg" class="message-icon-image">
+            <img src="assets/imgs/icons/email.svg" class="message-icon-image" alt="icon message">
             <!-- <div class="message-badge">1</div> -->
           </button>
           <a class="navbar-brand" href="index.html"><img class="logo " src="assets/imgs/logo.png"
@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
           <!-- Mobile User Info -->
           <div class="user-info d-md-none">
-            <img src="assets/imgs/user-photo-2.jpg" class="user-info-image">
+            <img src="assets/imgs/user-photo-2.jpg" class="user-info-image" alt="user-photo">
             <p class="user-info-name">
               Mark
             </p>
@@ -51,7 +51,7 @@
             </li>
             <li class="nav-item">
               <button type="button" class="message-icon-desktop" data-bs-toggle="modal" data-bs-target="#message">
-                <img src="assets/imgs/icons/email.svg" class="message-icon-image-desktop">
+                <img src="assets/imgs/icons/email.svg" class="message-icon-image-desktop" alt="message icon">
                 <!-- <div class="message-badge-desktop">1</div> -->
               </button>
             </li>
@@ -59,7 +59,7 @@
               <p class="user-info-name-desktop">
                 Mark
               </p>
-              <img src="assets/imgs/user-photo-2.jpg" class="user-info-image-desktop">
+              <img src="assets/imgs/user-photo-2.jpg" class="user-info-image-desktop" alt="user-photo">
             </li>
             <li class="nav-item">
               <a class="btn bg-white theme-border-radius" href="index.html">
@@ -144,22 +144,20 @@
           <!-- hero -->
           <div class="personal-item hero__personal-item__photo">
             <h2 class="fw-bold text-center">Mark Braun</h2>
-            <img class="my-5 d-block m-auto rounded-circle" src="assets/imgs/user-photo-2.jpg" class="rounded-circle"
-              alt="user photo">
+            <img class="my-5 d-block m-auto rounded-circle" src="assets/imgs/user-photo-2.jpg"  alt="user photo">
             <div class="container">
               <div class="row align-items-start"></div>
               <h3 class="fs-5">Change photo</h3>
             </div>
             <div class="row align-items-start">
               <div class="col-6">
-                <form action="">
+                <form action="/action_page.php">
                   <input type="file" id="myFile" name="filename">
                 </form>
               </div>
-              <div class="col-6">
-              </div>
+              <div class="col-6"></div>
+              
             </div>
-
           </div>
 
           <!-- input fields  -->
@@ -181,7 +179,7 @@
             <div class="hero__input-right">
               <label for="personNumber">Phone number:</label>
               <div class="input-group">
-                <input type="text" class="form-control" id="personNumber" placeholder="0732356966">
+                <input type="text" class="form-control" id="phoneNumber" placeholder="0732356966">
                 <span class="input-group-text"><img src="assets/imgs/icons/edit-outlined.png" alt="edit"></span>
               </div>
             </div>
@@ -198,16 +196,16 @@
         </div>
         <!-- /.buttons -->
       </div>
-      </div>
     </section>
     <!-- /.personal information -->
-    <!-- pent a car -->
+
+    <!-- rent a car -->
     <section class="container">
       <h2 id="rentCar" class="section__title py-4 my-4">Rent a car</h2>
 
       <!-- radio-btn-group -->
       <div class=" p-4">
-        <form class="d-flex flex-column  rent__button-group" action="">
+        <form class="d-flex flex-column  rent__button-group" action="/action_page.php">
           <span>Type of vehicle:</span>
           <div>
             <input type="radio" id="car" name="vehicle" value="car">
@@ -228,6 +226,7 @@
       <!-- /.radio-btn-group -->
 
       <div class="location__wrapper">
+
         <!-- pickup -->
         <div class="item__border mt-4 p-4 item__time-card">
           <h2 class="fw-bold text-center fs-3"> Pickup </h2>
@@ -240,17 +239,17 @@
           <!-- /.location-input -->
           <!-- date -->
           <div class="date__select mb-3">
-            <form action="">
+            <form action="/action_page.php">
               <label for="datemax">Date:</label><br>
-              <input class="form-control" type="date" id="datemax" name="datemax" max="2021-12-31">
+              <input class="form-control" type="date" id="date" name="datemax" max="2021-12-31">
             </form>
           </div>
           <!-- /.date -->
 
-          <!-- hours -->
+          <!-- time -->
           <div class="date__select">
             <span>Time</span>
-            <form class="date__select-form" action="">
+            <form class="date__select-form" action="/action_page.php">
               <select class="form-select  form-select-sm date__select-form__item" aria-label=".form-select-sm example"
                 id="hours">
                 <option value="1">1</option>
@@ -287,7 +286,7 @@
 
             </form>
           </div>
-          <!-- hours -->
+          <!-- time -->
         </div>
         <!-- /.pickup -->
 
@@ -297,13 +296,13 @@
           <div class="location__input mb-3">
             <label for="location">Location</label>
             <div class="input-group mb-2 ">
-              <input type="text" class="form-control" id="location" placeholder="address">
+              <input type="text" class="form-control" id="destination" placeholder="address">
             </div>
           </div>
           <!-- /.location-input -->
           <!-- date -->
           <div class="date__select mb-3">
-            <form action="">
+            <form action="/action_page.php">
               <label for="datemax">Date:</label><br>
               <input class="form-control" type="date" id="datemax" name="datemax" max="2021-12-31">
             </form>
@@ -312,12 +311,12 @@
           <!-- hours -->
           <div class="date__select">
             <span>Time</span>
-            <form class="date__select-form" action="">
+            <form class="date__select-form" action="/action_page.php">
 
               <!-- hours -->
 
               <select class="form-select  form-select-sm date__select-form__item" aria-label=".form-select-sm example"
-                id="hours">
+                id="hoursmax">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -334,7 +333,7 @@
               <label for="hours">hours</label>
               <!-- minutes -->
               <select class="form-select form-select-sm date__select-form__item" aria-label=".form-select-sm example"
-                id="minutes">
+                id="minutesmax">
                 <option value="1">5</option>
                 <option value="2">10</option>
                 <option value="3">15</option>
@@ -354,6 +353,8 @@
           </div>
           <!-- hours -->
         </div>
+
+      </div>
     </section>
     <!-- /.rent a car -->
 
@@ -583,11 +584,11 @@
   </footer>
 
   <!-- Modal costs calculate-->
-  <div class="modal fade" id="calculateTheCost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="calculateTheCost" tabindex="-1" aria-labelledby="calculateTheCost" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Your price is 500 SEK</h5>
+          <h5 class="modal-title" id="price">Your price is 500 SEK</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body d-flex align-items-center justify-content-around">
@@ -611,11 +612,11 @@
   <!-- /.Modal costs calculate -->
 
   <!-- Modal confirm the order-->
-  <div class="modal fade" id="orderConfirm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="orderConfirm" tabindex="-1" aria-labelledby="orderConfirm" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content secondWindow">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Your price is 500 SEK</h5>
+          <h5 class="modal-title" id="confirmPrice">Your price is 500 SEK</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body d-flex align-items-center justify-content-around">
@@ -645,11 +646,11 @@
   <!-- /.Modal confirm the order -->
 
   <!-- Modal no message-->
-  <div class="modal fade" id="message" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="message" tabindex="-1" aria-labelledby="noMessage" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content secondWindow">
         <div class="modal-header">
-          <h5 class="modal-title fw-bold" id="exampleModalLabel">You don't nave messages</h5>
+          <h5 class="modal-title fw-bold" id="noMessage">You don't nave messages</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body d-flex align-self-center justify-content-center fs-1">
@@ -665,11 +666,11 @@
   <!-- /.Modal no message -->
 
   <!-- Modal update personal information-->
-  <div class="modal fade" id="update" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="update" tabindex="-1" aria-labelledby="update" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content secondWindow">
         <div class="modal-header">
-          <h5 class="modal-title fw-bold" id="exampleModalLabel"> Your personal information has been updated</h5>
+          <h5 class="modal-title fw-bold" id="updateInfomation"> Your personal information has been updated</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body d-flex align-items-center justify-content-around fs-1">

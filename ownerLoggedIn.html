@@ -7,11 +7,10 @@
     <link href="assets/styles/bootstrap.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <title>Our transport- sign up page</title>
+    <title>Our transport- ownerLoggedIn</title>
 </head>
 
 <body>
@@ -26,8 +25,8 @@
                 <div class="d-flex align-items-end">
                     <button type="button" class="message-icon d-md-none" data-bs-toggle="modal"
                         data-bs-target="#message">
-                        <img src="assets/imgs/icons/email.svg" class="message-icon-image">
-                        <div class="message-badge">1</div>
+                        <img src="assets/imgs/icons/email.svg" class="message-icon-image" alt="message icon">
+                        <span class="message-badge">1</span>
                     </button>
                     <a class="navbar-brand" href="index.html"><img class="logo " src="assets/imgs/logo.png"
                             alt="Our-transport-logo"></a>
@@ -35,7 +34,7 @@
                 <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
                     <!-- Mobile User Info -->
                     <div class="user-info d-md-none">
-                        <img src="assets/imgs/owner-photo.jpg" class="user-info-image">
+                        <img src="assets/imgs/owner-photo.jpg" class="user-info-image" alt="owner photo">
                         <p class="user-info-name">
                             Melinda
                         </p>
@@ -51,18 +50,18 @@
                         <li class="nav-item">
                             <button type="button" class="message-icon-desktop" data-bs-toggle="modal"
                                 data-bs-target="#message">
-                                <img src="assets/imgs/icons/email.svg" class="message-icon-image-desktop">
-                                <div class="message-badge-desktop">1</div>
+                                <img src="assets/imgs/icons/email.svg" class="message-icon-image-desktop" alt="message icon">
+                                <span class="message-badge-desktop">1</span>
                             </button>
                         </li>
                         <li class="nav-item d-flex">
                             <p class="user-info-name-desktop">
                                 Melinda
                             </p>
-                            <img src="assets/imgs/owner-photo.jpg" class="user-info-image-desktop">
+                            <img src="assets/imgs/owner-photo.jpg" class="user-info-image-desktop" alt="owner photo">
                         </li>
                         <li class="nav-item">
-                            <a class="btn bg-white theme-border-radius" href="index.html">
+                            <a href="index.html" class="btn bg-white theme-border-radius">
                                 <span>Log out</span>
                             </a>
                         </li>
@@ -128,16 +127,104 @@
             </div>
         </nav>
     </header>
-
     <main class="container mt-5">
-        <div class="row">
-            <div class="col">
-                <h1 class="main-title">Your page title</h1>
-                <p class="text-center">Your page content goes here</p>
-            </div>
-        </div>
-    </main>
+        <div class="row mb-3">
+            <div class="col-12 col-md-6 text-center">
+                <h1 class="main-title mb-3">My information</h1>
+                <div class="box theme-shadow p-3 mb-5 bg-white rounded">
+                    <div>
+                        <h2 class="fw-bold text-center pt-3 font-color-loggedIn-box">Melinda Nillsson</h2>
+                        <img class="my-5 d-block m-auto owner-image-loggedIn-page"
+                            src="assets/imgs/portrait-597173_1920.jpg" alt="owner photo">
+                        <div class="container">
 
+                            <h3 class="fs-5 font-color-loggedIn-box">Change photo</h3>
+                        </div>
+                        <div class="row align-items-center ">
+                            <div class="col-12">
+                                <form action="/action_page.php">
+                                    <input type="file" id="fileUpload" name="filename" class="d-none">
+                                    <label for="fileUpload" class="theme-file-upload font-color-loggedIn-box">
+                                        Upload File
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row input-group flex-nowrap mt-5">
+                        <div class="col-auto">
+                            <label for="fullName" class="col-form-label">Full name</label>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Melinda Nillsson" id="fullName" aria-label="Username">
+                        <span class="input-group-text col-auto"><img
+                                src="assets/imgs/icons/edit-outlined.png" alt="edit"></span>
+                    </div>
+                    <div class="row input-group flex-nowrap mt-3">
+                        <div class="col-auto">
+                            <label for="personalNumber" class="col-form-label">Personal number</label>
+                        </div>
+                        <input id="personalNumber" type="text" class="form-control" placeholder="2000015-XXXX" aria-label="personalNumber">
+                        <span class="input-group-text col-auto" ><img
+                                src="assets/imgs/icons/edit-outlined.png" alt="edit"></span>
+                    </div>
+                    <div class="row input-group flex-nowrap mt-3 mb-5">
+                        <div class="col-auto">
+                            <label for="phoneNumber" class="col-form-label">Phone number</label>
+                        </div>
+                        <input id="phoneNumber" type="text" class="form-control" placeholder="074 987 54 68" aria-label="phoneNumber">
+                        <span class="input-group-text col-auto"><img
+                                src="assets/imgs/icons/edit-outlined.png" alt="edit"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <h1 class="main-title mb-3">Information about my car</h1>
+                <div class="box theme-shadow p-3 mb-5 bg-white rounded">
+                    <img class="owner-car-image mt-5 mb-5 " src="assets/imgs/car-items/car-owner-page.jpg"
+                        alt="owner car">
+                    <div class="row input-group flex-nowrap mt-3">
+                        <div class="col-auto">
+                            <label for="model" class="col-form-label">Model</label>
+                        </div>
+                        <input id="model" type="text" class="form-control" placeholder="Hyperlight" aria-label="model">
+                        <span class="input-group-text col-auto"><img
+                                src="assets/imgs/icons/edit-outlined.png" alt="edit"></span>
+                    </div>
+                    <div class="row input-group flex-nowrap mt-3">
+                        <div class="col-auto">
+                            <label for="registrationNumber" class="col-form-label">Registration number</label>
+                        </div>
+                        <input id="registrationNumber" type="text" class="form-control" placeholder="BKW 7164" aria-label="registrationNumber">
+                        <span class="input-group-text col-auto"><img
+                                src="assets/imgs/icons/edit-outlined.png" alt="edit"></span>
+                    </div>
+                    <div class="row input-group flex-nowrap mt-3">
+                        <div class="col-auto">
+                            <label for="options" class="col-form-label">Options</label>
+                        </div>
+                        <textarea id="options"  rows="2" class="one-row-textarea form-control" placeholder="Air conditioner
+Airbags
+Audio player
+Bluetooth" aria-label="options"></textarea>
+                        <span class="input-group-text col-auto"><img
+                                src="assets/imgs/icons/edit-outlined.png" alt="edit"></span>
+                    </div>
+                    <div class="row input-group flex-nowrap mt-3 mb-5">
+                        <div class="col-auto">
+                            <label for="carAvailability" class="col-form-label">Car availability</label>
+                        </div>
+                        <input id="carAvailability" type="text" class="form-control" placeholder="Yes" aria-label="carAvailability">
+                        <span class="input-group-text col-auto"><img
+                                src="assets/imgs/icons/edit-outlined.png" alt="edit"></span>
+                    </div>
+                </div>
+            </div>
+            <form action="/action_page.php" class="col-12 mb-md-0 text-center">
+                <a class="btn theme-btn-primary theme-btn-color theme-shadow p-2 mb-5" data-bs-toggle="modal" data-bs-target="#update" >Confirm</a>
+            </form>
+        </div>
+
+    </main>
     <footer class="bg-color-theme footer-color py-5">
         <div class="container">
             <div class="row pb-5 footer-top">
@@ -199,6 +286,7 @@
         </div>
     </footer>
 
+
     <!-- Modal message-->
     <div class="modal fade" id="message" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -241,6 +329,31 @@
         </div>
     </div>
     <!-- /.Modal  message -->
+
+
+
+    <!-- Modal update personal information-->
+    <div class="modal fade" id="update" tabindex="-1" aria-labelledby="update" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content secondWindow">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="updateInfomation"> Your personal information has been updated
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-around fs-1">
+                    <p>(❛ᴗ❛)</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn__back fw-normal" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.Modal update personal information -->
+
+
 
     <script src="assets/scripts/bootstrap.bundle.js"></script>
 </body>

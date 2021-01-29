@@ -1,356 +1,242 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link href="assets/styles/bootstrap.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles/style.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <title>Our Transport</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/styles/bootstrap.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Our transport- sign up page</title>
 </head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-color-theme">
-        <div class="container">
-            <button class="navbar-toggler burger-btn" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="index.html"><img class="logo " src="assets/imgs/logo.png" alt="Our-transport-logo"></a>
-        
-            <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
-                <ul class="navbar-nav theme-right">
-                    <li class="nav-item menu-language-item">
-                        <a class="nav-link" href="#">
-                            <i class="language-icon d-inline-block align-middle"></i>
-                            <span>En</span>
-                        </a>
-                    </li>
-                    <li class="nav-item d-none d-md-block">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#login">
-                            <i class="person-icon d-inline-block align-middle"></i>
-                            <span>Log in</span>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown d-md-none">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLogin" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
-                            <i class="person-icon align-middle d-none d-md-inline-block"></i>
-                            <span>Log in</span>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownLogin">
-                          <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#owner">As a car owner</a>
-                          <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#user">As a car user</a>
-                        </div>
-                    </li>
-                    <li class="nav-item d-none d-md-block">
-                        <a class="btn bg-white theme-border-radius" href="signUp.html">
-                            <span>Sign up</span>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown d-md-none">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSignUp" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
-                            <span>Sign up</span>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownSignUp">
-                          <a class="dropdown-item" href="signUp.html">As a car owner</a>
-                          <a class="dropdown-item" href="signUp.html">As a car user</a>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="d-flex justify-content-center header-list-icon">
-                    <li>
-                        <a href="#">
-                            <i class="facebook-icon d-inline-block align-middle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="linkedin-icon d-inline-block align-middle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="instagram-icon d-inline-block align-middle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="twitter-icon d-inline-block align-middle"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>    
-</header>
-
-  <main class="mb-5">
-    <section class="container">
-
-      <div class="d-flex">
-        <div>
-          <h1 class="section__title my-4">Sign up now</h1>
-
-
-          <div class="item__border p-5 me-4">
-            <form action="">
-              <div class="mb-3">
-                <label for="email">Email address:</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email address">
-                <span class="neverShare">We’ll never share your email with anyone else.</span>
-              </div>
-
-              <label for="name">Full name:</label>
-              <input type="text" class="form-control mb-2" id="name" placeholder="Mark Peterson">
-
-              <label for="personNumber">Phone number:</label>
-              <input type="tel" class="form-control mb-2" id="number" placeholder="072 786 89 89">
-
-              <label for="password">Creat password:</label>
-              <input type="password" class="form-control mb-2" id="password" placeholder="***********">
-
-              <label for="city">City:</label>
-              <select class="form-select  d-inline" id="city" role="choose the city">
-                <option value="1">Eslöv</option>
-                <option value="2">Helsingborg</option>
-                <option value="3">Hässleholm</option>
-                <option value="4">Höganäs</option>
-                <option value="5">Kristianstad</option>
-                <option value="6">Landskrona</option>
-                <option value="7">Lund</option>
-                <option value="8">Simrishamn</option>
-                <option value="9">Skanör Falsterbo</option>
-                <option value="10">Trelleborg</option>
-                <option value="11">Ystad</option>
-                <option value="12">Ängelholm</option>
-                <option value="13">Malmö</option>
-              </select>
-            </form>
-            <h2 class="fw-bold text-center fs-3 mt-5 mb-3"> Terms and conditions </h2>
-            <p>Topping cookie jujubes topping biscuit muffin dessert bonbon. Sweet roll jelly-o liquorice. Biscuit
-              gummies pie chocolate cake candy canes halvah caramels liquorice brownie.Carrot cake brownie carrot cake
-              apple pie halvah cake fruitcake donut liquorice.</p>
-
-            <form class="m-3">
-              <input type="checkbox" id="approved" name="approved" value="approved">
-              <label for="approved"> Approved</label>
-            </form>
-            <!-- buttons -->
-            <div class="personal-item text-center mt-5">
-              <!-- todo implement owners register -->
-              <a href="#" class="btn d-block m-auto mb-3 btn__custom">Register as an owner</a>
-              <button type="button" class="btn w-100 m-auto btn__custom" data-bs-toggle="modal"data-bs-target="#register">Register as a user</button>
-            </div>
-          </div>
-        </div>
-        <aside class="decktop__only">
-          <h2 class="fw-bold text-center fs-3 mt-5 mb-3">Earn any time anywhere</h2>
-          <img src="assets/imgs/car-items/red-car.jpg" alt="red car">
-          <h2 class="fw-bold text-center fs-3 mt-5 mb-3">Set your own schedule</p>
-            <img src="assets/imgs/car-items/orange-car.jpg" alt="orange car">
-        </aside>
-      </div>
-    </section>
-  </main>
-
-
-  <footer class="bg-color-theme footer-color py-5">
-    <div class="container">
-        <div class="row pb-5 footer-top">
-            <div class="col-12 col-md-6">
-                <div class="pb-3">
-                    Our Transport, Inc.<br>
-                    1355 Market St, Suite 900<br>
-                    San Francisco, CA 94103<br>
-                    P: (123) 456-7890
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <ul class="d-flex justify-content-end footer-list-icon">
-                    <li>
-                        <i class="language-icon d-inline-block align-middle"></i>
-                        <span class="d-inline-block align-middle">En</span>
-                    </li>
-                    <li>
-                        <i class="location-icon d-inline-block align-middle"></i>
-                        <span class="d-inline-block align-middle">Malmö</span>
-                    </li>
-                </ul>
-            </div> 
-        </div>
-        <div class="row footer-bottom">
-            <div class="col-12 col-md-6">
-                <div class="d-none d-md-block">
-                    For additional questions, contact info@transport.com
-                </div>
-                <div class="font-all-right">
-                    © 2020 Our Transport. All right reserved.
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <ul class="d-flex footer-list-icon">
-                    <li>
-                        <a href="#">
-                            <i class="facebook-icon d-inline-block align-middle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="linkedin-icon d-inline-block align-middle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="instagram-icon d-inline-block align-middle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="twitter-icon d-inline-block align-middle"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-    <!-- Modal register-->
-    <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="fw-bold">Congratulations, you have been registered</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body d-flex flex-column align-items-center">
-            <p>Please, log in now</p>
-            <form action="" class="">
-              <div class="col mb-3">
-                <label class="fw-bold me-2" for="userName">User name:</label>
-                <input class="ps-2" type="text" id="userName" name="userName" placeholder="User name">
-              </div>
-              <div class="col ">
-                <label class="fw-bold me-3" for="password">Password:</label>
-                <input class="ps-2" type="password" id="password" name="password" placeholder="Password">
-              </div>
-            </form>
-          </div>
-
-          <div class="modal-footer justify-content-around">
+<body>  
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-color-theme">
+            <div class="container">
+                <button class="navbar-toggler burger-btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img class="logo " src="assets/imgs/logo.png" alt="Our-transport-logo"></a>
             
-            <a href="clientProfile.html" class="btn btn__custom m-0">Log in</a>
+                <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+                    <ul class="navbar-nav theme-right">
+                        <li class="nav-item menu-language-item">
+                            <a class="nav-link" href="#">
+                                <i class="language-icon d-inline-block align-middle"></i>
+                                <span>En</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#login">
+                                <i class="person-icon d-inline-block align-middle"></i>
+                                <span>Log in</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown d-md-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLogin" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                                <i class="person-icon align-middle d-none d-md-inline-block"></i>
+                                <span>Log in</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownLogin">
+                              <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#owner">As a car owner</a>
+                              <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#user">As a car user</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
+                            <a class="btn bg-white theme-border-radius" href="signUp.html">
+                                <span>Sign up</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown d-md-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSignUp" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                                <span>Sign up</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownSignUp">
+                              <a class="dropdown-item" href="signUp.html">As a car owner</a>
+                              <a class="dropdown-item" href="signUp.html">As a car user</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="d-flex justify-content-center header-list-icon">
+                        <li>
+                            <a href="#">
+                                <i class="facebook-icon d-inline-block align-middle"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="linkedin-icon d-inline-block align-middle"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="instagram-icon d-inline-block align-middle"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="twitter-icon d-inline-block align-middle"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
+    </header>
+    <main class="container mt-5">
+        <div class="row mb-3">
+            <div class="col-6 text-center">
+                <h1 class="main-title">Sign up now</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="box theme-shadow p-3 mb-5 bg-white rounded">
+                    <form class="theme-form-padding" action="registermycar.html">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@domain.com"> 
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full name</label>
+                            <input type="email" class="form-control" id="fullName" placeholder="Melinda Nilsson ">
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber" class="form-label">Phone number</label>
+                            <input type="tel" class="form-control" id="phoneNumber" placeholder="072 786 89 89">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="form-label">Creat password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="***********">
+                        </div>
+                        <div class="form-group">
+                            <label for="chooseCity" class="form-label">City</label>
+                            <input type="text" class="form-control " id="chooseCity" placeholder="Malmö">
+                        </div>
+                        <div class="form-group form-check mt-5">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Approved</label>
+                        </div>
+                        <h4 class="text-center">Terms and conditions</h4>
+                        <p>Topping cookie jujubes topping biscuit muffin dessert bonbon. Sweet roll jelly-o liquorice. Biscuit gummies
+                        pie chocolate cake candy canes halvah caramels liquorice brownie.Carrot cake brownie carrot cake apple pie halvah cake fruitcake donut liquorice.
+                        </p>
+                        <div class="row justify-content-around text-center mb-5 mt-5">
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <button type="submit" class="btn theme-btn-primary theme-btn-color theme-shadow p-2">Register as an owner</button>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="clientProfile.html" class="btn theme-btn-primary theme-btn-color theme-shadow p-2">Register as a user</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>     
+            </div>
+            <div class="text-center col-md-6 d-none d-md-block">
+                <p class="theme-info">Earn any time anywhere</p>
+                <img class="sign-up-image-red" src="assets/imgs/car-items/red-car2.jpg" alt="A modern red car">
+                <p class="theme-info">Set your own scheduel</p>
+                <img class="sign-up-image-orange mt-5" src="assets/imgs/car-items/orange-car2.jpg" alt="A whatch with a car in background">
+            </div>  
+        </div>
+    </main>
+    <footer class="bg-color-theme footer-color py-5">
+        <div class="container">
+            <div class="row pb-5 footer-top">
+                <div class="col-12 col-md-6">
+                    <div class="pb-3">
+                        Our Transport, Inc.<br>
+                        1355 Market St, Suite 900<br>
+                        San Francisco, CA 94103<br>
+                        P: (123) 456-7890
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <ul class="d-flex justify-content-end footer-list-icon">
+                        <li>
+                            <i class="language-icon d-inline-block align-middle"></i>
+                            <span class="d-inline-block align-middle">En</span>
+                        </li>
+                        <li>
+                            <i class="location-icon d-inline-block align-middle"></i>
+                            <span class="d-inline-block align-middle">Malmö</span>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="row footer-bottom">
+                <div class="col-12 col-md-6">
+                    <div class="d-none d-md-block">
+                        For additional questions, contact info@transport.com
+                    </div>
+                    <div class="font-all-right">
+                        © 2020 Our Transport. All right reserved.
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <ul class="d-flex footer-list-icon">
+                        <li>
+                            <a href="#">
+                                <i class="facebook-icon d-inline-block align-middle"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="linkedin-icon d-inline-block align-middle"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="instagram-icon d-inline-block align-middle"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="twitter-icon d-inline-block align-middle"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+      <!-- Modal login-->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="fw-bold">Log in</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-5">
+              <form action="/action_page.php" class="">
+                <div class="col d-flex justify-content-around mb-3">
+                  <label class="fw-bold" for="userName">User name:</label>
+                  <input class="ps-2" type="text" id="userName" name="userName" placeholder="User name">
+                </div>
+                <div class="col d-flex justify-content-around">
+                  <label class="fw-bold" for="password">Password:</label>
+                  <input class="ps-2" type="password" id="password" name="password" placeholder="Password">
+                </div>
+              </form>
+            </div>
+  
+            <div class="modal-footer justify-content-around">
+              <a href="ownerLoggedIn.html" class="btn btn__custom m-0">as an owner </a>
+              <a href="clientProfile.html" class="btn btn__custom m-0">as a user</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- /.Modal register -->
-
-     <!-- Modal login-->
-     <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="fw-bold">Log in</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body p-5">
-            <form action="" class="">
-              <div class="col d-flex justify-content-around mb-3">
-                <label class="fw-bold" for="userName">User name:</label>
-                <input class="ps-2" type="text" id="userName" name="userName" placeholder="User name">
-              </div>
-              <div class="col d-flex justify-content-around">
-                <label class="fw-bold" for="password">Password:</label>
-                <input class="ps-2" type="password" id="password" name="password" placeholder="Password">
-              </div>
-            </form>
-          </div>
-
-          <div class="modal-footer justify-content-around">
-            <a href="ownerLoggedIn.html" class="btn btn__custom m-0">as an owner </a>
-            <a href="clientProfile.html" class="btn btn__custom m-0">as a user</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.Modal login -->
-
-     <!-- Modal login for owner-->
-     <div class="modal fade" id="owner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="fw-bold">Log in</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body p-5">
-            <form action="" class="">
-              <div class="col d-flex justify-content-around mb-3">
-                <label class="fw-bold" for="userName">User name:</label>
-                <input class="ps-2" type="text" id="userName" name="userName" placeholder="User name">
-              </div>
-              <div class="col d-flex justify-content-around">
-                <label class="fw-bold" for="password">Password:</label>
-                <input class="ps-2" type="password" id="password" name="password" placeholder="Password">
-              </div>
-            </form>
-          </div>
-
-          <div class="modal-footer justify-content-around">
-            <!-- TODO -->
-            <a href="ownerLoggedIn.html" class="btn btn__custom m-0">as an owner </a>
-            <!-- <a href="clientProfile.html" class="btn btn__custom m-0">as a user</a> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.Modal login for owner -->
-
-    <!-- Modal login for user-->
-    <div class="modal fade" id="user" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="fw-bold">Log in</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body p-5">
-            <form action="" class="">
-              <div class="col d-flex justify-content-around mb-3">
-                <label class="fw-bold" for="userName">User name:</label>
-                <input class="ps-2" type="text" id="userName" name="userName" placeholder="User name">
-              </div>
-              <div class="col d-flex justify-content-around">
-                <label class="fw-bold" for="password">Password:</label>
-                <input class="ps-2" type="password" id="password" name="password" placeholder="Password">
-              </div>
-            </form>
-          </div>
-
-          <div class="modal-footer justify-content-around">
-            <a href="clientProfile.html" class="btn btn__custom m-0">as a user</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.Modal login for owner -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="assets/scripts/bootstrap.bundle.js"></script>
-
-
+      <!-- /.Modal login -->
+       
+      
+      
+      <script src="assets/scripts/bootstrap.bundle.js"></script>
 </body>
-
 </html>

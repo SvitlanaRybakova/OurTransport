@@ -16,11 +16,11 @@ body {
 }
 
 h1.main-title {
-    color:#C36969
+    color: #C36969
 }
 
 .theme-border-form {
-   border:solid 1px #E5DBD9;
+    border: solid 1px #E5DBD9;
 }
 
 .theme-info {
@@ -34,8 +34,13 @@ h1.main-title {
 
 .theme-btn-primary {
     background-color: #C36969;
-    border-color:#C36969 ;
+    border-color: #C36969;
     font-weight: bold;
+}
+
+.theme-btn-primary:hover {
+    background-color: #b42f2f;
+    color: #fff;
 }
 
 .theme-btn-color {
@@ -63,7 +68,7 @@ h1.main-title {
 }
 
 .footer-color {
-    color: #FFF9F9 ;
+    color: #FFF9F9;
 }
 
 .bg-color-theme {
@@ -81,7 +86,6 @@ h1.main-title {
     background-size: contain;
     width: 16px;
     height: 16px;
-   
 }
 
 .logo {
@@ -94,7 +98,7 @@ h1.main-title {
     vertical-align: middle;
 }
 
-.location-icon{
+.location-icon {
     background-image: url("assets/imgs/icons/location.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -112,7 +116,7 @@ h1.main-title {
     height: 16px;
 }
 
-.linkedin-icon{
+.linkedin-icon {
     background-image: url("assets/imgs/icons/linkedin.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -139,8 +143,7 @@ h1.main-title {
     height: 16px;
 }
 
-.footer-list-icon,
-.header-list-icon {
+.footer-list-icon, .header-list-icon {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -158,7 +161,7 @@ h1.main-title {
     justify-content: flex-start;
 }
 
-.footer-top .footer-list-icon{
+.footer-top .footer-list-icon {
     flex-direction: column;
     align-items: flex-end;
 }
@@ -198,7 +201,6 @@ h1.main-title {
     border-bottom-right-radius: 0;
 }
 
-
 .navbar-collapse .navbar-nav .nav-item .nav-link.dropdown-toggle::after {
     position: absolute;
     right: 15px;
@@ -228,8 +230,7 @@ h1.main-title {
     border-bottom-right-radius: 10px;
 }
 
-.navbar-collapse.collapsing,
-.navbar-collapse.show {
+.navbar-collapse.collapsing, .navbar-collapse.show {
     height: calc(100vh - 106px) !important;
 }
 
@@ -248,7 +249,7 @@ h1.main-title {
 
 .navbar.logged-in .navbar-collapse .navbar-nav .nav-item {
     border-bottom: solid 1px #ddd;
-} 
+}
 
 .navbar.logged-in .navbar-collapse .navbar-nav .nav-item:last-child {
     border-bottom-right-radius: 10px;
@@ -367,71 +368,129 @@ h1.main-title {
     background-color: #C36969;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-
+.theme-file-upload {
+    border: 1px solid #95989A;
+    padding: 10px;
+    margin-top: 9px;
+    background-color: #ECEEEF;
 }
 
+.theme-upload-car-img {
+    border: 1px solid #95989A;
+    padding: 5px;
+    margin-top: 9px;
+    background-color: #ECEEEF;
+}
+
+.font-color-loggedIn-box {
+    color: #707070;
+}
+
+.owner-car-image {
+    max-width: 100%;
+}
+
+.one-row-textarea {
+    line-height: 26px;
+}
+
+.owner-image-loggedIn-page {
+    max-width: 40%;
+    border-radius: 50%;
+}
+
+.carSoptions-border {
+    border: 1px solid #DDDDDD;
+    padding: 10px;
+    padding-bottom: 100px;
+}
+
+.btn__custom {
+    background-color: #C36969;
+    box-shadow: 0rem 0.1rem 0.37rem #000000;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn__custom:hover {
+    background-color: #b42f2f;
+    color: #fff;
+}
+
+
+::focus{
+    border: 1px solid red;
+}
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {}
+
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    .navbar-collapse.show{
+
+@media (min-width: 768px) {
+    .navbar-collapse.show {
         height: auto !important;
     }
-
     .navbar-collapse .navbar-nav {
         width: auto;
         margin: 0;
         margin-top: 0;
     }
-
     .navbar-collapse .navbar-nav .nav-item {
         border: none;
         padding-left: 15px;
     }
-
     .navbar-collapse .navbar-nav .nav-item .nav-link {
         padding-left: 0;
         background-color: transparent;
     }
-
     .menu-language-item {
         position: static;
     }
-
     .footer-bottom {
         flex-direction: row;
     }
-
-    .footer-bottom  .footer-list-icon {
+    .footer-bottom .footer-list-icon {
         justify-content: flex-end;
     }
-
     .footer-list-icon li {
         padding-right: 0;
         padding-left: 15px;
     }
-
-    .footer-top .footer-list-icon{
+    .footer-top .footer-list-icon {
         flex-direction: row;
     }
-
     .navbar.logged-in .navbar-collapse .navbar-nav {
         border: none;
         background: transparent;
     }
-
     .navbar.logged-in .navbar-collapse .navbar-nav .nav-item {
         border: none;
     }
- }
+}
+
+.btn__back {
+    box-shadow: 0rem 0.1rem 0.37rem #000000;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btn__back:hover {
+    color: #ffffff;
+    background-color: #b42f2f;
+}
+
+.owner-info{
+    flex-basis: 70%;
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
 
- }
+@media (min-width: 992px) {}
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+
+@media (min-width: 1200px) {
     .sign-up-image-orange {
         max-width: 51%;
     }

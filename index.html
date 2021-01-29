@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
+
   <link href="assets/styles/bootstrap.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -52,7 +52,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownLogin">
                 <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#owner">As a car owner</a>
-                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#user" >As a car user</a>
+                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#user">As a car user</a>
               </div>
             </li>
             <li class="nav-item d-none d-md-block">
@@ -98,18 +98,18 @@
     </nav>
   </header>
 
-  <main class="mb-5">
+  <main>
     <!-- main image -->
-    <section class="main__bg position-relative">
+    <div class="main__bg position-relative">
       <div class="overlay d-flex align-items-center">
         <div class="container d-flex flex-column justify-content-center align-items-center main__tagline-wrapper">
-          <p class="header__text">vestibulum venenatis molestie
-            placerat. morbi eget nisl arcu. </p>
+          <p class="header__text">Get a ride easily,
+            set your own scheduel and earn anytime, anywhere.</p>
 
           <a href="#about" class="btn btn__custom d-block header__button">Read more</a>
         </div>
       </div>
-    </section>
+    </div>
     <!-- /.main image -->
 
     <section class="aboutUs">
@@ -161,6 +161,7 @@
           </div>
           <!-- /.card 'Rapidity' -->
         </div>
+      </div>
     </section>
 
     <!-- Carousel -->
@@ -315,13 +316,16 @@
     <!-- /.Carousel -->
 
     <!--buttons -->
-    <div class="personal-item text-center mt-5 mb-5 main__button">
-      <a href="signUp.html" class="btn d-block m-auto mb-3 btn__custom">Sign up</a>
-      <button type="button" class="btn w-100 m-auto btn__custom" data-bs-toggle="modal"
-        data-bs-target="#login">Login</button>
+    <div class="w-60">
+      <div class="personal-item text-center mt-5 mb-5 main__button">
+        <a href="signUp.html" class="btn d-block m-auto mb-3 btn__custom">Sign up</a>
+        <button type="button" class="btn w-100 m-auto btn__custom" data-bs-toggle="modal"
+          data-bs-target="#login">Login</button>
+      </div>
     </div>
     <!-- /.buttons -->
 
+  </main>
 
     <footer class="bg-color-theme footer-color py-5">
       <div class="container">
@@ -388,7 +392,7 @@
 
 
     <!-- Modal login-->
-    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -396,14 +400,14 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body p-5">
-            <form action="" class="">
+            <form action="/action_page.php" class="">
               <div class="col d-flex justify-content-around mb-3">
-                <label class="fw-bold" for="userName">User name:</label>
-                <input class="ps-2" type="text" id="userName" name="userName" placeholder="User name">
+                <label class="fw-bold" for="allUsers">User name:</label>
+                <input class="ps-2" type="text" id="allUsers" name="allUsers" placeholder="User name">
               </div>
               <div class="col d-flex justify-content-around">
-                <label class="fw-bold" for="password">Password:</label>
-                <input class="ps-2" type="password" id="password" name="password" placeholder="Password">
+                <label class="fw-bold" for="allPass">Password:</label>
+                <input class="ps-2" type="password" id="allPass" name="allPass" placeholder="Password">
               </div>
             </form>
           </div>
@@ -418,7 +422,7 @@
     <!-- /.Modal login -->
 
     <!-- Modal login for owner-->
-    <div class="modal fade" id="owner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="owner" tabindex="-1" aria-labelledby="owner" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -426,14 +430,14 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body p-5">
-            <form action="" class="">
+            <form action="/action_page.php" class="">
               <div class="col d-flex justify-content-around mb-3">
-                <label class="fw-bold" for="userName">User name:</label>
-                <input class="ps-2" type="text" id="userName" name="userName" placeholder="User name">
+                <label class="fw-bold" for="ownerName">User name:</label>
+                <input class="ps-2" type="text" id="ownerName" name="uownerName" placeholder="User name">
               </div>
               <div class="col d-flex justify-content-around">
-                <label class="fw-bold" for="password">Password:</label>
-                <input class="ps-2" type="password" id="password" name="password" placeholder="Password">
+                <label class="fw-bold" for="ownerPassword">Password:</label>
+                <input class="ps-2" type="password" id="ownerPassword" name="ownerPassword" placeholder="Password">
               </div>
             </form>
           </div>
@@ -449,7 +453,7 @@
     <!-- /.Modal login for owner -->
 
     <!-- Modal login for user-->
-    <div class="modal fade" id="user" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="user" tabindex="-1" aria-labelledby="user" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -457,14 +461,14 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body p-5">
-            <form action="" class="">
+            <form action="/action_page.php" class="">
               <div class="col d-flex justify-content-around mb-3">
                 <label class="fw-bold" for="userName">User name:</label>
                 <input class="ps-2" type="text" id="userName" name="userName" placeholder="User name">
               </div>
               <div class="col d-flex justify-content-around">
-                <label class="fw-bold" for="password">Password:</label>
-                <input class="ps-2" type="password" id="password" name="password" placeholder="Password">
+                <label class="fw-bold" for="userPassword">Password:</label>
+                <input class="ps-2" type="password" id="userPassword" name="userPassword" placeholder="Password">
               </div>
             </form>
           </div>
@@ -475,8 +479,9 @@
         </div>
       </div>
     </div>
-    <!-- /.Modal login for owner -->
-  </main>
+    <!-- /.Modal login for user -->
+
+  
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="assets/scripts/bootstrap.bundle.js"></script>
 
